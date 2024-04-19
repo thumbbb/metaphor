@@ -1,0 +1,303 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue?vue&type=style&index=0&scoped=eb83e9e4&lang.scss?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\ndiv {\r\n    height: 5.6rem;\r\n    margin-right: 0;\r\n    border-bottom: solid 1px #2d2d2d;\r\n    &:last-child {\r\n        border-bottom: none;\r\n    }\r\n    @include tablet {\r\n        height: 5rem;\r\n    }\r\n    a {\r\n        display: block;\r\n        padding: 1.4rem;\r\n        margin: 0.1rem;\r\n        box-sizing: border-box;\r\n        @include tablet {\r\n            padding: 0.8rem;\r\n        }\r\n        &:hover {\r\n            background-color: #1a1a1a;\r\n            > img {\r\n                opacity: 1;\r\n            }\r\n        }\r\n        img {\r\n            display: block;\r\n            width: 100%;\r\n            opacity: 0.7;\r\n        }\r\n    }\r\n}\r\n",
+      "start": 1710320468829,
+      "end": 1710320468829,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue"
+        ],
+        "names": [],
+        "mappings": ";AA0DA,CAAC,CAAC,EAAE;IACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;IACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAChC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACvB;IACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IAChB;IACA,EAAE;QACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;QACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;YACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACnB;QACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;YACJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YACzB,EAAE,CAAC,CAAC,EAAE;gBACF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;YACd;QACJ;QACA,CAAC,CAAC,EAAE;YACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;YACd,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;YACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;QAChB;IACJ;AACJ",
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n    <div v-if=\"shareUrl\">\r\n        <a href=\"#\" @click.prevent=\"clip(urlText)\">URL 공유하기</a>\r\n    </div>\r\n    <div v-if=\"shareFacebook\">\r\n        <a href=\"#\" @click.prevent=\"btnShareFb\">페이스북 공유하기</a>\r\n    </div>\r\n    <div v-if=\"shareTwitter\">\r\n        <a href=\"#\" @click.prevent=\"btnShareTw\">트위터 공유하기</a>\r\n    </div>\r\n</template>\r\n\r\n<script>\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    props: {\r\n        shareUrl: Boolean,\r\n        shareFacebook: Boolean,\r\n        shareTwitter: Boolean\r\n    },\r\n    data() {\r\n        return {\r\n            urlText: window.location.href\r\n        };\r\n    },\r\n    methods: {\r\n        clip: function (val) {\r\n            const t = document.createElement(\"textarea\");\r\n            document.body.appendChild(t);\r\n            t.value = val;\r\n            t.select();\r\n            document.execCommand(\"copy\");\r\n            document.body.removeChild(t);\r\n            alert(\"주소가 복사되었습니다.\\n원하는 곳에 붙여넣기(Ctrl+V) 해주세요.\");\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareTw: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareFb: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);\r\n            this.modalStore.layerToggle(null);\r\n        }\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\ndiv {\r\n    height: 5.6rem;\r\n    margin-right: 0;\r\n    border-bottom: solid 1px #2d2d2d;\r\n    &:last-child {\r\n        border-bottom: none;\r\n    }\r\n    @include tablet {\r\n        height: 5rem;\r\n    }\r\n    a {\r\n        display: block;\r\n        padding: 1.4rem;\r\n        margin: 0.1rem;\r\n        box-sizing: border-box;\r\n        @include tablet {\r\n            padding: 0.8rem;\r\n        }\r\n        &:hover {\r\n            background-color: #1a1a1a;\r\n            > img {\r\n                opacity: 1;\r\n            }\r\n        }\r\n        img {\r\n            display: block;\r\n            width: 100%;\r\n            opacity: 0.7;\r\n        }\r\n    }\r\n}\r\n</style>\r\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468829,
+      "end": 1710320468829,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468829,
+      "end": 1710320468829,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468829,
+      "end": 1710320468829,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468829,
+      "end": 1710320468830,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320468830,
+      "end": 1710320468830,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".pc-element{display:block}@media (width <= 1279px){.pc-element{display:none}}.mo-element{display:none}@media (width <= 1279px){.mo-element{display:block}}div{border-bottom:1px solid #2d2d2d;height:5.6rem;margin-right:0}div:last-child{border-bottom:none}@media (width <= 1279px){div{height:5rem}}div a{box-sizing:border-box;display:block;margin:.1rem;padding:1.4rem}@media (width <= 1279px){div a{padding:.8rem}}div a:hover{background-color:#1a1a1a}div a:hover>img{opacity:1}div a img{display:block;opacity:.7;width:100%}",
+      "start": 1710320468830,
+      "end": 1710320469383,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue",
+        "mappings": "AAgDA,YACI,cA/CA,yBA8CJ,YAGQ,cAIR,YACI,aAtDA,yBAqDJ,YAGQ,eCzDR,IAGI,gCAFA,cACA,eAEA,eACI,mBDJJ,yBCDJ,IAQQ,aAEJ,MAII,sBAHA,cAEA,aADA,eDXJ,yBCSA,MAMQ,eAEJ,YACI,yBACA,gBACI,UAGR,UACI,cAEA,WADA",
+        "names": [],
+        "ignoreList": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/assets/styles/abstracts/_mixins.scss",
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue"
+        ],
+        "sourcesContent": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".pc-element[data-v-eb83e9e4]{display:block}@media (width <= 1279px){.pc-element[data-v-eb83e9e4]{display:none}}.mo-element[data-v-eb83e9e4]{display:none}@media (width <= 1279px){.mo-element[data-v-eb83e9e4]{display:block}}div[data-v-eb83e9e4]{border-bottom:1px solid #2d2d2d;height:5.6rem;margin-right:0}div[data-v-eb83e9e4]:last-child{border-bottom:none}@media (width <= 1279px){div[data-v-eb83e9e4]{height:5rem}}div a[data-v-eb83e9e4]{box-sizing:border-box;display:block;margin:.1rem;padding:1.4rem}@media (width <= 1279px){div a[data-v-eb83e9e4]{padding:.8rem}}div a[data-v-eb83e9e4]:hover{background-color:#1a1a1a}div a:hover>img[data-v-eb83e9e4]{opacity:1}div a img[data-v-eb83e9e4]{display:block;opacity:.7;width:100%}",
+      "start": 1710320469383,
+      "end": 1710320469390,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue",
+        "mappings": "AAAA,6BAAY,aAAa,CAAC,yBAAyB,6BAAY,YAAY,CAAC,CAAC,6BAAY,YAAY,CAAC,yBAAyB,6BAAY,aAAa,CAAC,CAAC,qBAAI,+BAA+B,CAAC,aAAa,CAAC,cAAc,CAAC,gCAAe,kBAAkB,CAAC,yBAAyB,qBAAI,WAAW,CAAC,CAAC,uBAAM,qBAAqB,CAAC,aAAa,CAAC,YAAY,CAAC,cAAc,CAAC,yBAAyB,uBAAM,aAAa,CAAC,CAAC,6BAAY,wBAAwB,CAAC,iCAAgB,SAAS,CAAC,2BAAU,aAAa,CAAC,UAAU,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320469391,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320469391,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320469552,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320469552,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710320469553,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".pc-element[data-v-eb83e9e4]{display:block}@media (width <= 1279px){.pc-element[data-v-eb83e9e4]{display:none}}.mo-element[data-v-eb83e9e4]{display:none}@media (width <= 1279px){.mo-element[data-v-eb83e9e4]{display:block}}div[data-v-eb83e9e4]{border-bottom:1px solid #2d2d2d;height:5.6rem;margin-right:0}div[data-v-eb83e9e4]:last-child{border-bottom:none}@media (width <= 1279px){div[data-v-eb83e9e4]{height:5rem}}div a[data-v-eb83e9e4]{box-sizing:border-box;display:block;margin:.1rem;padding:1.4rem}@media (width <= 1279px){div a[data-v-eb83e9e4]{padding:.8rem}}div a[data-v-eb83e9e4]:hover{background-color:#1a1a1a}div a:hover>img[data-v-eb83e9e4]{opacity:1}div a img[data-v-eb83e9e4]{display:block;opacity:.7;width:100%}\"",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469556,
+      "end": 1710320469556,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469556,
+      "end": 1710320469556,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710320469556,
+      "end": 1710320469557,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320469557,
+      "end": 1710320469557,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320469557,
+      "end": 1710320469558,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal"
+    }
+  ]
+}

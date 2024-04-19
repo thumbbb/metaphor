@@ -1,0 +1,220 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <div v-if=\"shareUrl\">\r\n        <a href=\"#\" @click.prevent=\"clip(urlText)\">URL 공유하기</a>\r\n    </div>\r\n    <div v-if=\"shareFacebook\">\r\n        <a href=\"#\" @click.prevent=\"btnShareFb\">페이스북 공유하기</a>\r\n    </div>\r\n    <div v-if=\"shareTwitter\">\r\n        <a href=\"#\" @click.prevent=\"btnShareTw\">트위터 공유하기</a>\r\n    </div>\r\n</template>\r\n\r\n<script>\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    props: {\r\n        shareUrl: Boolean,\r\n        shareFacebook: Boolean,\r\n        shareTwitter: Boolean\r\n    },\r\n    data() {\r\n        return {\r\n            urlText: window.location.href\r\n        };\r\n    },\r\n    methods: {\r\n        clip: function (val) {\r\n            const t = document.createElement(\"textarea\");\r\n            document.body.appendChild(t);\r\n            t.value = val;\r\n            t.select();\r\n            document.execCommand(\"copy\");\r\n            document.body.removeChild(t);\r\n            alert(\"주소가 복사되었습니다.\\n원하는 곳에 붙여넣기(Ctrl+V) 해주세요.\");\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareTw: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareFb: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);\r\n            this.modalStore.layerToggle(null);\r\n        }\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\ndiv {\r\n    height: 5.6rem;\r\n    margin-right: 0;\r\n    border-bottom: solid 1px #2d2d2d;\r\n    &:last-child {\r\n        border-bottom: none;\r\n    }\r\n    @include tablet {\r\n        height: 5rem;\r\n    }\r\n    a {\r\n        display: block;\r\n        padding: 1.4rem;\r\n        margin: 0.1rem;\r\n        box-sizing: border-box;\r\n        @include tablet {\r\n            padding: 0.8rem;\r\n        }\r\n        &:hover {\r\n            background-color: #1a1a1a;\r\n            > img {\r\n                opacity: 1;\r\n            }\r\n        }\r\n        img {\r\n            display: block;\r\n            width: 100%;\r\n            opacity: 0.7;\r\n        }\r\n    }\r\n}\r\n</style>\r\n",
+      "start": 1710320464966,
+      "end": 1710320465429,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320465429,
+      "end": 1710320465429,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320465429,
+      "end": 1710320465429,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320465429,
+      "end": 1710320465429,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710320465430,
+      "end": 1710320465430,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320465430,
+      "end": 1710320465430,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320465430,
+      "end": 1710320465430,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320465430,
+      "end": 1710320465430,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nconst _sfc_main = {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    props: {\r\n        shareUrl: Boolean,\r\n        shareFacebook: Boolean,\r\n        shareTwitter: Boolean\r\n    },\r\n    data() {\r\n        return {\r\n            urlText: window.location.href\r\n        };\r\n    },\r\n    methods: {\r\n        clip: function (val) {\r\n            const t = document.createElement(\"textarea\");\r\n            document.body.appendChild(t);\r\n            t.value = val;\r\n            t.select();\r\n            document.execCommand(\"copy\");\r\n            document.body.removeChild(t);\r\n            alert(\"주소가 복사되었습니다.\\n원하는 곳에 붙여넣기(Ctrl+V) 해주세요.\");\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareTw: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareFb: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);\r\n            this.modalStore.layerToggle(null);\r\n        }\r\n    }\r\n};\r\n\nimport { withModifiers as _withModifiers, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, Fragment as _Fragment, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-eb83e9e4\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { key: 0 }\nconst _hoisted_2 = { key: 1 }\nconst _hoisted_3 = { key: 2 }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    ($props.shareUrl)\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n          _createElementVNode(\"a\", {\n            href: \"#\",\n            onClick: _cache[0] || (_cache[0] = _withModifiers($event => ($options.clip($data.urlText)), [\"prevent\"]))\n          }, \"URL 공유하기\")\n        ]))\n      : _createCommentVNode(\"\", true),\n    ($props.shareFacebook)\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_2, [\n          _createElementVNode(\"a\", {\n            href: \"#\",\n            onClick: _cache[1] || (_cache[1] = _withModifiers((...args) => ($options.btnShareFb && $options.btnShareFb(...args)), [\"prevent\"]))\n          }, \"페이스북 공유하기\")\n        ]))\n      : _createCommentVNode(\"\", true),\n    ($props.shareTwitter)\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n          _createElementVNode(\"a\", {\n            href: \"#\",\n            onClick: _cache[2] || (_cache[2] = _withModifiers((...args) => ($options.btnShareTw && $options.btnShareTw(...args)), [\"prevent\"]))\n          }, \"트위터 공유하기\")\n        ]))\n      : _createCommentVNode(\"\", true)\n  ], 64))\n}\n\nimport \"C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue?vue&type=style&index=0&scoped=eb83e9e4&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-eb83e9e4\"]])",
+      "start": 1710320465430,
+      "end": 1710320465437,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320465437,
+      "end": 1710320465437,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320465437,
+      "end": 1710320465437,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320465437,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320465499,
+      "end": 1710320465499,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320465499,
+      "end": 1710320465503,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320465503,
+      "end": 1710320465503,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320465503,
+      "end": 1710320465503,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710320465503,
+      "end": 1710320465503,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710320465503,
+      "end": 1710320465503,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320465503,
+      "end": 1710320465503,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320465503,
+      "end": 1710320465503,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320465503,
+      "end": 1710320465503,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320465503,
+      "end": 1710320465504,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"nuxt-app\",\r\n  \"private\": true,\r\n  \"type\": \"module\",\r\n  \"lint-staged\": {\r\n    \"src/**/*.{js,jsx,ts,tsx}\": [\r\n      \"eslint --fix\",\r\n      \"prettier --write\"\r\n    ]\r\n  },\r\n  \"scripts\": {\r\n    \"build\": \"nuxt build\",\r\n    \"build-dev\": \"nuxt build --dotenv .env.dev\",\r\n    \"build-live\": \"nuxt build --dotenv .env\",\r\n    \"dev\": \"nuxt dev --dotenv .env.dev\",\r\n    \"live\": \"nuxt dev --dotenv .env.live\",\r\n    \"generate\": \"nuxt generate\",\r\n    \"preview\": \"nuxt preview\",\r\n    \"postinstall\": \"nuxt prepare\",\r\n    \"lint\": \"eslint \\\"**/*.{ts,tsx,vue,js}\\\" --fix\",\r\n    \"lint-eslint\": \"eslint --ignore-path .gitignore **/*{ts,tsx,vue,js} --fix\",\r\n    \"lint-prettier\": \"prettier --write \\\"**/*.(ts|tsx|vue|js|json)\\\"\",\r\n    \"deploy\": \"nuxt generate && gh-pages --dotfiles -d .output/public\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"@nuxt/devtools\": \"latest\",\r\n    \"eslint\": \"^8.55.0\",\r\n    \"eslint-config-prettier\": \"^9.1.0\",\r\n    \"eslint-plugin-prettier\": \"^5.0.1\",\r\n    \"eslint-plugin-vue\": \"^9.19.2\",\r\n    \"husky\": \"^8.0.3\",\r\n    \"lint-staged\": \"^15.2.0\",\r\n    \"nuxt\": \"^3.8.2\",\r\n    \"prettier\": \"3.1.1\",\r\n    \"sass\": \"^1.69.5\",\r\n    \"sass-loader\": \"^13.3.2\",\r\n    \"typescript\": \"^5.1.3\",\r\n    \"vite-plugin-eslint\": \"^1.8.1\",\r\n    \"vue\": \"^3.3.10\",\r\n    \"vue-router\": \"^4.2.5\"\r\n  },\r\n  \"dependencies\": {\r\n    \"@pinia/nuxt\": \"^0.4.11\",\r\n    \"nuxt-swiper\": \"^1.2.2\",\r\n    \"pinia\": \"^2.1.7\"\r\n  }\r\n}\r\n
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	
++++ b/package.json	
+@@ -1,47 +1,48 @@
+ {
+-  "name": "nuxt-app",
+-  "private": true,
+-  "type": "module",
+-  "lint-staged": {
+-    "src/**/*.{js,jsx,ts,tsx}": [
+-      "eslint --fix",
+-      "prettier --write"
+-    ]
+-  },
+-  "scripts": {
+-    "build": "nuxt build",
+-    "build-dev": "nuxt build --dotenv .env.dev",
+-    "build-live": "nuxt build --dotenv .env",
+-    "dev": "nuxt dev --dotenv .env.dev",
+-    "live": "nuxt dev --dotenv .env.live",
+-    "generate": "nuxt generate",
+-    "preview": "nuxt preview",
+-    "postinstall": "nuxt prepare",
+-    "lint": "eslint \"**/*.{ts,tsx,vue,js}\" --fix",
+-    "lint-eslint": "eslint --ignore-path .gitignore **/*{ts,tsx,vue,js} --fix",
+-    "lint-prettier": "prettier --write \"**/*.(ts|tsx|vue|js|json)\"",
+-    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
+-  },
+-  "devDependencies": {
+-    "@nuxt/devtools": "latest",
+-    "eslint": "^8.55.0",
+-    "eslint-config-prettier": "^9.1.0",
+-    "eslint-plugin-prettier": "^5.0.1",
+-    "eslint-plugin-vue": "^9.19.2",
+-    "husky": "^8.0.3",
+-    "lint-staged": "^15.2.0",
+-    "nuxt": "^3.8.2",
+-    "prettier": "3.1.1",
+-    "sass": "^1.69.5",
+-    "sass-loader": "^13.3.2",
+-    "typescript": "^5.1.3",
+-    "vite-plugin-eslint": "^1.8.1",
+-    "vue": "^3.3.10",
+-    "vue-router": "^4.2.5"
+-  },
+-  "dependencies": {
+-    "@pinia/nuxt": "^0.4.11",
+-    "nuxt-swiper": "^1.2.2",
+-    "pinia": "^2.1.7"
+-  }
++    "name": "nuxt-app",
++    "private": true,
++    "type": "module",
++    "lint-staged": {
++        "src/**/*.{js,jsx,ts,tsx}": [
++            "eslint --fix",
++            "prettier --write"
++        ]
++    },
++    "scripts": {
++        "build": "nuxt build",
++        "build-dev": "nuxt build --dotenv .env.dev",
++        "build-live": "nuxt build --dotenv .env",
++        "dev": "nuxt dev --dotenv .env.dev",
++        "live": "nuxt dev --dotenv .env.live",
++        "generate": "nuxt generate",
++        "preview": "nuxt preview",
++        "postinstall": "nuxt prepare",
++        "lint": "eslint \"**/*.{ts,tsx,vue,js}\" --fix",
++        "lint-eslint": "eslint --ignore-path .gitignore **/*{ts,tsx,vue,js} --fix",
++        "lint-prettier": "prettier --write \"**/*.(ts|tsx|vue|js|json)\"",
++        "deploy": "gh-pages --dotfiles -d .output/public"
++    },
++    "devDependencies": {
++        "@nuxt/devtools": "latest",
++        "eslint": "^8.55.0",
++        "eslint-config-prettier": "^9.1.0",
++        "eslint-plugin-prettier": "^5.0.1",
++        "eslint-plugin-vue": "^9.19.2",
++        "husky": "^8.0.3",
++        "lint-staged": "^15.2.0",
++        "nuxt": "^3.8.2",
++        "prettier": "3.1.1",
++        "sass": "^1.69.5",
++        "sass-loader": "^13.3.2",
++        "typescript": "^5.1.3",
++        "vite-plugin-eslint": "^1.8.1",
++        "vue": "^3.3.10",
++        "vue-router": "^4.2.5"
++    },
++    "dependencies": {
++        "@pinia/nuxt": "^0.4.11",
++        "gh-pages": "^6.1.1",
++        "nuxt-swiper": "^1.2.2",
++        "pinia": "^2.1.7"
++    }
+ }
+Index: pages/index.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n    <NuxtLayout name=\"default\">\r\n        <div class=\"body-container\">\r\n            <Snb :class=\"{ __active: modalStore.layerVisible && modalStore.layerTarget === 'snb' }\" />\r\n            <Swiper :modules=\"[SwiperMousewheel, SwiperFreeMode]\" :direction=\"'vertical'\" :mousewheel=\"true\" @swiper=\"indexStore.onSwiper\" @slideChange=\"indexStore.onSlideChange\">\r\n                <SwiperSlide>\r\n                    <button class=\"store-test\" @click=\"modalStore.layerFlow('layer', 'test')\">열려라 참깨라면!</button>\r\n                    <Share :shareUrl=\"shareUrl\" />\r\n                    <Share :shareFacebook=\"shareFacebook\" />\r\n                </SwiperSlide>\r\n                <SwiperSlide> Swiper 02 </SwiperSlide>\r\n                <SwiperSlide> Swiper 03 <Footer /></SwiperSlide>\r\n            </Swiper>\r\n        </div>\r\n        <Layer v-if=\"modalStore.layerVisible && modalStore.layerTarget === 'layer'\" :layerType=\"modalStore.layerType\" />\r\n        <Top-btn />\r\n    </NuxtLayout>\r\n</template>\r\n\r\n<script>\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore(),\r\n            indexStore: useIndexStore()\r\n        };\r\n    },\r\n    data() {\r\n        return {\r\n            shareUrl: true,\r\n            shareFacebook: true,\r\n            shareTwitter: true\r\n        };\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\">\r\n.body-container {\r\n    width: 100%;\r\n    height: 100vh;\r\n    display: flex;\r\n    flex-direction: column;\r\n    .store-test {\r\n        margin: auto;\r\n        background-color: #ffdf15;\r\n        padding: 2rem;\r\n        color: #393939;\r\n        font-size: 2rem;\r\n        border-radius: 3rem;\r\n    }\r\n}\r\n.swiper {\r\n    width: 100%;\r\n    height: auto;\r\n}\r\n.swiper-slide {\r\n    font-size: 18px;\r\n    background-color: #c3c3c3;\r\n    color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: column;\r\n}\r\n</style>\r\n
+===================================================================
+diff --git a/pages/index.vue b/pages/index.vue
+--- a/pages/index.vue	
++++ b/pages/index.vue	
+@@ -3,8 +3,10 @@
+         <div class="body-container">
+             <Snb :class="{ __active: modalStore.layerVisible && modalStore.layerTarget === 'snb' }" />
+             <Swiper :modules="[SwiperMousewheel, SwiperFreeMode]" :direction="'vertical'" :mousewheel="true" @swiper="indexStore.onSwiper" @slideChange="indexStore.onSlideChange">
++                <SwiperSlide></SwiperSlide>
+                 <SwiperSlide>
+                     <button class="store-test" @click="modalStore.layerFlow('layer', 'test')">열려라 참깨라면!</button>
++                    <a href="blue-pants">자기소개 보기</a>
+                     <Share :shareUrl="shareUrl" />
+                     <Share :shareFacebook="shareFacebook" />
+                 </SwiperSlide>
+Index: components/Footer.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n    <footer class=\"footer-container\">\r\n        <ul class=\"foot-list\">\r\n            <li><a href=\"https://privacy.webzen.co.kr/Policy/main/4\" target=\"_blank\">이용약관</a></li>\r\n            <li>\r\n                <a href=\"https://privacy.webzen.co.kr/Policy/main/2\" target=\"_blank\"><strong>개인정보처리방침</strong></a>\r\n            </li>\r\n            <li><a href=\"https://shadow-garden.webzen.co.kr/community-policy\" target=\"_blank\">운영정책</a></li>\r\n            <li><a href=\"https://company.webzen.com/ko\" target=\"_blank\">회사소개</a></li>\r\n        </ul>\r\n        <p class=\"copyright\">\r\n            ©Daisuke Aizawa,KADOKAWA/Shadow Garden<br />\r\n            ©Master of Garden Project. Published by WEBZEN\r\n        </p>\r\n    </footer>\r\n</template>\r\n\r\n<script>\r\nimport { useModalStore } from \"../store/useModalStore\";\r\n\r\nexport default {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\n.footer-container {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n    width: 100%;\r\n    height: 9rem;\r\n    padding: 0.5rem 0;\r\n    z-index: 60;\r\n    background-color: #000;\r\n    color: white;\r\n    margin-top: auto;\r\n    @include tablet {\r\n        margin-top: 10rem;\r\n        padding-bottom: 8rem;\r\n    }\r\n    .foot-list {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n        grid-gap: 1rem;\r\n        > li {\r\n            position: relative;\r\n            & + li {\r\n                &:after {\r\n                    content: \"\";\r\n                    width: 0.1rem;\r\n                    height: 100%;\r\n                    background-color: #848484;\r\n                    position: absolute;\r\n                    top: 0.1rem;\r\n                    left: -0.5rem;\r\n                }\r\n            }\r\n            > a {\r\n                display: block;\r\n                font-size: 1.4rem;\r\n                color: #d7d7d7;\r\n                white-space: nowrap;\r\n                font-family: \"Noto Sans KR\", sans-serif;\r\n                @include tablet {\r\n                    font-size: 1.2rem;\r\n                    &:after {\r\n                        padding-left: 0.5rem;\r\n                        font-size: 1rem;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        & + .copyright {\r\n            margin-top: 1rem;\r\n        }\r\n    }\r\n    .copyright {\r\n        font-size: 1.2rem;\r\n        line-height: 1.8rem;\r\n        color: #7f7f7f;\r\n        text-align: center;\r\n        font-family: \"Noto Sans KR\", sans-serif;\r\n        @include tablet {\r\n            font-size: 1rem;\r\n        }\r\n    }\r\n}\r\n</style>\r\n
+===================================================================
+diff --git a/components/Footer.vue b/components/Footer.vue
+--- a/components/Footer.vue	
++++ b/components/Footer.vue	
+@@ -1,17 +1,14 @@
+ <template>
+     <footer class="footer-container">
+         <ul class="foot-list">
+-            <li><a href="https://privacy.webzen.co.kr/Policy/main/4" target="_blank">이용약관</a></li>
++            <li><a href="#" target="_blank">이용약관</a></li>
+             <li>
+-                <a href="https://privacy.webzen.co.kr/Policy/main/2" target="_blank"><strong>개인정보처리방침</strong></a>
++                <a href="#" target="_blank"><strong>개인정보처리방침</strong></a>
+             </li>
+-            <li><a href="https://shadow-garden.webzen.co.kr/community-policy" target="_blank">운영정책</a></li>
+-            <li><a href="https://company.webzen.com/ko" target="_blank">회사소개</a></li>
++            <li><a href="#" target="_blank">운영정책</a></li>
++            <li><a href="#" target="_blank">회사소개</a></li>
+         </ul>
+-        <p class="copyright">
+-            ©Daisuke Aizawa,KADOKAWA/Shadow Garden<br />
+-            ©Master of Garden Project. Published by WEBZEN
+-        </p>
++        <p class="copyright">©Copyright</p>
+     </footer>
+ </template>
+ 
+Index: server/tsconfig.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"extends\": \"../.nuxt/tsconfig.server.json\"\r\n}\r\n
+===================================================================
+diff --git a/server/tsconfig.json b/server/tsconfig.json
+--- a/server/tsconfig.json	
++++ b/server/tsconfig.json	
+@@ -1,3 +1,3 @@
+ {
+-  "extends": "../.nuxt/tsconfig.server.json"
++    "extends": "../.nuxt/tsconfig.server.json"
+ }
+Index: tsconfig.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  // https://nuxt.com/docs/guide/concepts/typescript\r\n  \"extends\": \"./.nuxt/tsconfig.json\"\r\n}\r\n
+===================================================================
+diff --git a/tsconfig.json b/tsconfig.json
+--- a/tsconfig.json	
++++ b/tsconfig.json	
+@@ -1,4 +1,4 @@
+ {
+-  // https://nuxt.com/docs/guide/concepts/typescript
+-  "extends": "./.nuxt/tsconfig.json"
++    // https://nuxt.com/docs/guide/concepts/typescript
++    "extends": "./.nuxt/tsconfig.json"
+ }
+Index: assets/styles/main.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import \"base/reset\";\r\n\r\n@import \"abstracts/variables\";\r\n@import \"abstracts/mixins\";\r\n\r\n@import \"base/font\";\r\n\r\n@import \"base/normalize\";\r\n@import \"base/animations\";\r\n\r\n@import \"vendors/swiper\";\r\n\r\n@import \"layout/header\";\r\n\r\n@import \"components/button\";\r\n\r\n@import \"base/base\";\r\n\r\n@import \"pages/index\";\r\n\r\n
+===================================================================
+diff --git a/assets/styles/main.scss b/assets/styles/main.scss
+--- a/assets/styles/main.scss	
++++ b/assets/styles/main.scss	
+@@ -17,4 +17,5 @@
+ @import "base/base";
+ 
+ @import "pages/index";
++@import "pages/bluePants";
+ 
+Index: .prettierrc.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n    \"endOfLine\": \"auto\",\r\n    \"printWidth\": 180,\r\n    \"htmlWhitespaceSensitivity\": \"css\",\r\n    \"semi\": false,\r\n    \"singleQuote\": false,\r\n    \"tabWidth\": 4,\r\n    \"trailingComma\": \"none\",\r\n    \"useTabs\": false,\r\n    \"overrides\": [\r\n        {\r\n            \"files\": [\r\n                \"*.vue\"\r\n            ],\r\n            \"options\": {\r\n                \"semi\": true,\r\n                \"trailingComma\": \"none\",\r\n                \"singleQuote\": false,\r\n                \"tabWidth\": 4\r\n            }\r\n        }\r\n    ]\r\n}
+===================================================================
+diff --git a/.prettierrc.json b/.prettierrc.json
+--- a/.prettierrc.json	
++++ b/.prettierrc.json	
+@@ -9,9 +9,7 @@
+     "useTabs": false,
+     "overrides": [
+         {
+-            "files": [
+-                "*.vue"
+-            ],
++            "files": ["*.vue"],
+             "options": {
+                 "semi": true,
+                 "trailingComma": "none",
+@@ -20,4 +18,4 @@
+             }
+         }
+     ]
+-}
+\ No newline at end of file
++}
+Index: layout/default.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n    <slot />\r\n</template>\r\n\r\n<script></script>\r\n\r\n<style lang=\"scss\"></style>\r\n
+===================================================================
+diff --git a/layout/default.vue b/layout/default.vue
+--- a/layout/default.vue	
++++ b/layout/default.vue	
+@@ -1,4 +1,5 @@
+ <template>
++    <Main-header />
+     <slot />
+ </template>
+ 
+Index: nuxt.config.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// https://nuxt.com/docs/api/configuration/nuxt-config\r\nimport eslintPlugin from \"vite-plugin-eslint\"\r\nexport default defineNuxtConfig({\r\n    app: {\r\n        head: {\r\n            title: 'GitHub Pages test',\r\n            meta: [\r\n                { charset: 'utf-8' },\r\n                { name: 'viewport', content: 'width=device-width, initial-scale=1' },\r\n                { hid: 'description', name: 'description', content: 'test!' },\r\n                { name: 'format-detection', content: 'telephone=no' }\r\n            ],\r\n            link: [\r\n                { rel: 'icon', type: 'image/svg', href: '/favicon.svg' }\r\n            ]\r\n        },\r\n        baseURL: '/thumb/',\r\n        buildAssetsDir: 'assets',\r\n        cdnURL: process.env.CDN_URL\r\n    },\r\n    devtools: { enabled: true },\r\n    modules: [\"nuxt-swiper\", \"@pinia/nuxt\"],\r\n    css: [\"@/assets/styles/main.scss\"],\r\n    alias: {\r\n        \"@images\": process.env.IMG_BASE_URL\r\n    },\r\n    vite: {\r\n        plugins: [eslintPlugin()],\r\n        css: {\r\n            preprocessorOptions: {\r\n                scss: {\r\n                    additionalData: `\r\n                        @import \"@/assets/styles/abstracts/_variables.scss\";\r\n                        @import \"@/assets/styles/abstracts/_mixins.scss\";\r\n                    `\r\n                }\r\n            }\r\n        }\r\n    }\r\n})\r\n
+===================================================================
+diff --git a/nuxt.config.ts b/nuxt.config.ts
+--- a/nuxt.config.ts	
++++ b/nuxt.config.ts	
+@@ -2,20 +2,8 @@
+ import eslintPlugin from "vite-plugin-eslint"
+ export default defineNuxtConfig({
+     app: {
+-        head: {
+-            title: 'GitHub Pages test',
+-            meta: [
+-                { charset: 'utf-8' },
+-                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+-                { hid: 'description', name: 'description', content: 'test!' },
+-                { name: 'format-detection', content: 'telephone=no' }
+-            ],
+-            link: [
+-                { rel: 'icon', type: 'image/svg', href: '/favicon.svg' }
+-            ]
+-        },
+-        baseURL: '/thumb/',
+-        buildAssetsDir: 'assets',
++        baseURL: "/Portfolio/",
++        buildAssetsDir: "assets",
+         cdnURL: process.env.CDN_URL
+     },
+     devtools: { enabled: true },
+Index: .eslintrc.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n    \"env\": {\r\n        \"browser\": true,\r\n        \"es2021\": true\r\n    },\r\n    \"extends\": [\r\n        \"eslint:recommended\",\r\n        \"plugin:vue/vue3-essential\",\r\n        \"plugin:prettier/recommended\"\r\n    ],\r\n    \"parserOptions\": {\r\n        \"ecmaVersion\": \"latest\",\r\n        \"sourceType\": \"module\"\r\n    },\r\n    \"plugins\": [\r\n        \"vue\", \"prettier\"\r\n    ],\r\n    \"rules\": {\r\n        \"vue/multi-word-component-names\": [\"off\"],\r\n        \"vue/component-tags-order\": [\r\n            \"error\",\r\n            {\r\n                \"order\": [[\"script\", \"template\"], \"style\"]\r\n            }\r\n        ],\r\n        \"vue/attribute-hyphenation\": \"off\",\r\n        \"no-undef\": \"off\",\r\n        \"no-unused-vars\": \"off\"\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/.eslintrc.json b/.eslintrc.json
+--- a/.eslintrc.json	
++++ b/.eslintrc.json	
+@@ -3,18 +3,12 @@
+         "browser": true,
+         "es2021": true
+     },
+-    "extends": [
+-        "eslint:recommended",
+-        "plugin:vue/vue3-essential",
+-        "plugin:prettier/recommended"
+-    ],
++    "extends": ["eslint:recommended", "plugin:vue/vue3-essential", "plugin:prettier/recommended"],
+     "parserOptions": {
+         "ecmaVersion": "latest",
+         "sourceType": "module"
+     },
+-    "plugins": [
+-        "vue", "prettier"
+-    ],
++    "plugins": ["vue", "prettier"],
+     "rules": {
+         "vue/multi-word-component-names": ["off"],
+         "vue/component-tags-order": [

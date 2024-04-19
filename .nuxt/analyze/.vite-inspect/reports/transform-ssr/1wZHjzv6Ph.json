@@ -1,0 +1,303 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Footer.vue?vue&type=style&index=0&scoped=1b2d13cf&lang.scss?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n.footer-container {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n    width: 100%;\r\n    height: 9rem;\r\n    padding: 0.5rem 0;\r\n    z-index: 60;\r\n    background-color: #000;\r\n    color: white;\r\n    margin-top: auto;\r\n    @include tablet {\r\n        margin-top: 10rem;\r\n        padding-bottom: 8rem;\r\n    }\r\n    .foot-list {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n        grid-gap: 1rem;\r\n        > li {\r\n            position: relative;\r\n            & + li {\r\n                &:after {\r\n                    content: \"\";\r\n                    width: 0.1rem;\r\n                    height: 100%;\r\n                    background-color: #848484;\r\n                    position: absolute;\r\n                    top: 0.1rem;\r\n                    left: -0.5rem;\r\n                }\r\n            }\r\n            > a {\r\n                display: block;\r\n                font-size: 1.4rem;\r\n                color: #d7d7d7;\r\n                white-space: nowrap;\r\n                font-family: \"Noto Sans KR\", sans-serif;\r\n                @include tablet {\r\n                    font-size: 1.2rem;\r\n                    &:after {\r\n                        padding-left: 0.5rem;\r\n                        font-size: 1rem;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        & + .copyright {\r\n            margin-top: 1rem;\r\n        }\r\n    }\r\n    .copyright {\r\n        font-size: 1.2rem;\r\n        line-height: 1.8rem;\r\n        color: #7f7f7f;\r\n        text-align: center;\r\n        font-family: \"Noto Sans KR\", sans-serif;\r\n        @include tablet {\r\n            font-size: 1rem;\r\n        }\r\n    }\r\n}\r\n",
+      "start": 1710320468860,
+      "end": 1710320468860,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Footer.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Footer.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n    <footer class=\"footer-container\">\r\n        <ul class=\"foot-list\">\r\n            <li><a href=\"https://privacy.webzen.co.kr/Policy/main/4\" target=\"_blank\">이용약관</a></li>\r\n            <li>\r\n                <a href=\"https://privacy.webzen.co.kr/Policy/main/2\" target=\"_blank\"><strong>개인정보처리방침</strong></a>\r\n            </li>\r\n            <li><a href=\"https://shadow-garden.webzen.co.kr/community-policy\" target=\"_blank\">운영정책</a></li>\r\n            <li><a href=\"https://company.webzen.com/ko\" target=\"_blank\">회사소개</a></li>\r\n        </ul>\r\n        <p class=\"copyright\">\r\n            ©Daisuke Aizawa,KADOKAWA/Shadow Garden<br />\r\n            ©Master of Garden Project. Published by WEBZEN\r\n        </p>\r\n    </footer>\r\n</template>\r\n\r\n<script>\r\nimport { useModalStore } from \"../store/useModalStore\";\r\n\r\nexport default {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\n.footer-container {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n    width: 100%;\r\n    height: 9rem;\r\n    padding: 0.5rem 0;\r\n    z-index: 60;\r\n    background-color: #000;\r\n    color: white;\r\n    margin-top: auto;\r\n    @include tablet {\r\n        margin-top: 10rem;\r\n        padding-bottom: 8rem;\r\n    }\r\n    .foot-list {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n        grid-gap: 1rem;\r\n        > li {\r\n            position: relative;\r\n            & + li {\r\n                &:after {\r\n                    content: \"\";\r\n                    width: 0.1rem;\r\n                    height: 100%;\r\n                    background-color: #848484;\r\n                    position: absolute;\r\n                    top: 0.1rem;\r\n                    left: -0.5rem;\r\n                }\r\n            }\r\n            > a {\r\n                display: block;\r\n                font-size: 1.4rem;\r\n                color: #d7d7d7;\r\n                white-space: nowrap;\r\n                font-family: \"Noto Sans KR\", sans-serif;\r\n                @include tablet {\r\n                    font-size: 1.2rem;\r\n                    &:after {\r\n                        padding-left: 0.5rem;\r\n                        font-size: 1rem;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        & + .copyright {\r\n            margin-top: 1rem;\r\n        }\r\n    }\r\n    .copyright {\r\n        font-size: 1.2rem;\r\n        line-height: 1.8rem;\r\n        color: #7f7f7f;\r\n        text-align: center;\r\n        font-family: \"Noto Sans KR\", sans-serif;\r\n        @include tablet {\r\n            font-size: 1rem;\r\n        }\r\n    }\r\n}\r\n</style>\r\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468860,
+      "end": 1710320468860,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468860,
+      "end": 1710320468860,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468860,
+      "end": 1710320468860,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468860,
+      "end": 1710320468860,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320468860,
+      "end": 1710320468860,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".pc-element{display:block}@media (width <= 1279px){.pc-element{display:none}}.mo-element{display:none}@media (width <= 1279px){.mo-element{display:block}}.footer-container{align-items:center;background-color:#000;color:#fff;display:flex;flex-direction:column;height:9rem;justify-content:center;margin-top:auto;padding:.5rem 0;width:100%;z-index:60}@media (width <= 1279px){.footer-container{margin-top:10rem;padding-bottom:8rem}}.footer-container .foot-list{align-items:center;display:flex;justify-content:space-between;grid-gap:1rem}.footer-container .foot-list>li{position:relative}.footer-container .foot-list>li+li:after{background-color:#848484;content:\"\";height:100%;left:-.5rem;position:absolute;top:.1rem;width:.1rem}.footer-container .foot-list>li>a{color:#d7d7d7;display:block;font-family:Noto Sans KR,sans-serif;font-size:1.4rem;white-space:nowrap}@media (width <= 1279px){.footer-container .foot-list>li>a{font-size:1.2rem}.footer-container .foot-list>li>a:after{font-size:1rem;padding-left:.5rem}}.footer-container .foot-list+.copyright{margin-top:1rem}.footer-container .copyright{color:#7f7f7f;font-family:Noto Sans KR,sans-serif;font-size:1.2rem;line-height:1.8rem;text-align:center}@media (width <= 1279px){.footer-container .copyright{font-size:1rem}}",
+      "start": 1710320468860,
+      "end": 1710320469383,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Footer.vue",
+        "mappings": "AAgDA,YACI,cA/CA,yBA8CJ,YAGQ,cAIR,YACI,aAtDA,yBAqDJ,YAGQ,eCzDR,kBAEI,mBAOA,sBACA,WATA,aAGA,sBAEA,YAHA,uBAQA,gBAJA,gBAFA,WAGA,WDPA,yBCDJ,kBAaQ,iBACA,qBAEJ,6BAGI,mBAFA,aACA,8BAEA,cACA,gCACI,kBAEI,yCAII,yBAHA,WAEA,YAIA,YAFA,kBACA,UAJA,YAQR,kCAGI,cAFA,cAIA,oCAHA,iBAEA,mBDrCZ,yBCiCQ,kCAOQ,iBACA,wCAEI,eADA,oBAMhB,wCACI,gBAGR,6BAGI,cAEA,oCAJA,iBACA,mBAEA,kBDxDJ,yBCoDA,6BAOQ",
+        "names": [],
+        "ignoreList": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/assets/styles/abstracts/_mixins.scss",
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Footer.vue"
+        ],
+        "sourcesContent": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".pc-element[data-v-1b2d13cf]{display:block}@media (width <= 1279px){.pc-element[data-v-1b2d13cf]{display:none}}.mo-element[data-v-1b2d13cf]{display:none}@media (width <= 1279px){.mo-element[data-v-1b2d13cf]{display:block}}.footer-container[data-v-1b2d13cf]{align-items:center;background-color:#000;color:#fff;display:flex;flex-direction:column;height:9rem;justify-content:center;margin-top:auto;padding:.5rem 0;width:100%;z-index:60}@media (width <= 1279px){.footer-container[data-v-1b2d13cf]{margin-top:10rem;padding-bottom:8rem}}.footer-container .foot-list[data-v-1b2d13cf]{align-items:center;display:flex;justify-content:space-between;grid-gap:1rem}.footer-container .foot-list>li[data-v-1b2d13cf]{position:relative}.footer-container .foot-list>li+li[data-v-1b2d13cf]:after{background-color:#848484;content:\"\";height:100%;left:-.5rem;position:absolute;top:.1rem;width:.1rem}.footer-container .foot-list>li>a[data-v-1b2d13cf]{color:#d7d7d7;display:block;font-family:Noto Sans KR,sans-serif;font-size:1.4rem;white-space:nowrap}@media (width <= 1279px){.footer-container .foot-list>li>a[data-v-1b2d13cf]{font-size:1.2rem}.footer-container .foot-list>li>a[data-v-1b2d13cf]:after{font-size:1rem;padding-left:.5rem}}.footer-container .foot-list+.copyright[data-v-1b2d13cf]{margin-top:1rem}.footer-container .copyright[data-v-1b2d13cf]{color:#7f7f7f;font-family:Noto Sans KR,sans-serif;font-size:1.2rem;line-height:1.8rem;text-align:center}@media (width <= 1279px){.footer-container .copyright[data-v-1b2d13cf]{font-size:1rem}}",
+      "start": 1710320469386,
+      "end": 1710320469390,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Footer.vue",
+        "mappings": "AAAA,6BAAY,aAAa,CAAC,yBAAyB,6BAAY,YAAY,CAAC,CAAC,6BAAY,YAAY,CAAC,yBAAyB,6BAAY,aAAa,CAAC,CAAC,mCAAkB,kBAAkB,CAAC,qBAAqB,CAAC,UAAU,CAAC,YAAY,CAAC,qBAAqB,CAAC,WAAW,CAAC,sBAAsB,CAAC,eAAe,CAAC,eAAe,CAAC,UAAU,CAAC,UAAU,CAAC,yBAAyB,mCAAkB,gBAAgB,CAAC,mBAAmB,CAAC,CAAC,8CAA6B,kBAAkB,CAAC,YAAY,CAAC,6BAA6B,CAAC,aAAa,CAAC,iDAAgC,iBAAiB,CAAC,0DAAyC,wBAAwB,CAAC,UAAU,CAAC,WAAW,CAAC,WAAW,CAAC,iBAAiB,CAAC,SAAS,CAAC,WAAW,CAAC,mDAAkC,aAAa,CAAC,aAAa,CAAC,mCAAmC,CAAC,gBAAgB,CAAC,kBAAkB,CAAC,yBAAyB,mDAAkC,gBAAgB,CAAC,yDAAwC,cAAc,CAAC,kBAAkB,CAAC,CAAC,yDAAwC,eAAe,CAAC,8CAA6B,aAAa,CAAC,mCAAmC,CAAC,gBAAgB,CAAC,kBAAkB,CAAC,iBAAiB,CAAC,yBAAyB,8CAA6B,cAAc,CAAC",
+        "names": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Footer.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320469420,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320469420,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320469552,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320469552,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".pc-element[data-v-1b2d13cf]{display:block}@media (width <= 1279px){.pc-element[data-v-1b2d13cf]{display:none}}.mo-element[data-v-1b2d13cf]{display:none}@media (width <= 1279px){.mo-element[data-v-1b2d13cf]{display:block}}.footer-container[data-v-1b2d13cf]{align-items:center;background-color:#000;color:#fff;display:flex;flex-direction:column;height:9rem;justify-content:center;margin-top:auto;padding:.5rem 0;width:100%;z-index:60}@media (width <= 1279px){.footer-container[data-v-1b2d13cf]{margin-top:10rem;padding-bottom:8rem}}.footer-container .foot-list[data-v-1b2d13cf]{align-items:center;display:flex;justify-content:space-between;grid-gap:1rem}.footer-container .foot-list>li[data-v-1b2d13cf]{position:relative}.footer-container .foot-list>li+li[data-v-1b2d13cf]:after{background-color:#848484;content:\\\"\\\";height:100%;left:-.5rem;position:absolute;top:.1rem;width:.1rem}.footer-container .foot-list>li>a[data-v-1b2d13cf]{color:#d7d7d7;display:block;font-family:Noto Sans KR,sans-serif;font-size:1.4rem;white-space:nowrap}@media (width <= 1279px){.footer-container .foot-list>li>a[data-v-1b2d13cf]{font-size:1.2rem}.footer-container .foot-list>li>a[data-v-1b2d13cf]:after{font-size:1rem;padding-left:.5rem}}.footer-container .foot-list+.copyright[data-v-1b2d13cf]{margin-top:1rem}.footer-container .copyright[data-v-1b2d13cf]{color:#7f7f7f;font-family:Noto Sans KR,sans-serif;font-size:1.2rem;line-height:1.8rem;text-align:center}@media (width <= 1279px){.footer-container .copyright[data-v-1b2d13cf]{font-size:1rem}}\"",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469556,
+      "end": 1710320469556,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469556,
+      "end": 1710320469556,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710320469556,
+      "end": 1710320469557,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320469557,
+      "end": 1710320469557,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320469557,
+      "end": 1710320469558,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal"
+    }
+  ]
+}

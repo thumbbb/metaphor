@@ -1,0 +1,273 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <div v-if=\"shareUrl\">\r\n        <a href=\"#\" @click.prevent=\"clip(urlText)\">URL 공유하기</a>\r\n    </div>\r\n    <div v-if=\"shareFacebook\">\r\n        <a href=\"#\" @click.prevent=\"btnShareFb\">페이스북 공유하기</a>\r\n    </div>\r\n    <div v-if=\"shareTwitter\">\r\n        <a href=\"#\" @click.prevent=\"btnShareTw\">트위터 공유하기</a>\r\n    </div>\r\n</template>\r\n\r\n<script>\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    props: {\r\n        shareUrl: Boolean,\r\n        shareFacebook: Boolean,\r\n        shareTwitter: Boolean\r\n    },\r\n    data() {\r\n        return {\r\n            urlText: window.location.href\r\n        };\r\n    },\r\n    methods: {\r\n        clip: function (val) {\r\n            const t = document.createElement(\"textarea\");\r\n            document.body.appendChild(t);\r\n            t.value = val;\r\n            t.select();\r\n            document.execCommand(\"copy\");\r\n            document.body.removeChild(t);\r\n            alert(\"주소가 복사되었습니다.\\n원하는 곳에 붙여넣기(Ctrl+V) 해주세요.\");\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareTw: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareFb: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);\r\n            this.modalStore.layerToggle(null);\r\n        }\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\ndiv {\r\n    height: 5.6rem;\r\n    margin-right: 0;\r\n    border-bottom: solid 1px #2d2d2d;\r\n    &:last-child {\r\n        border-bottom: none;\r\n    }\r\n    @include tablet {\r\n        height: 5rem;\r\n    }\r\n    a {\r\n        display: block;\r\n        padding: 1.4rem;\r\n        margin: 0.1rem;\r\n        box-sizing: border-box;\r\n        @include tablet {\r\n            padding: 0.8rem;\r\n        }\r\n        &:hover {\r\n            background-color: #1a1a1a;\r\n            > img {\r\n                opacity: 1;\r\n            }\r\n        }\r\n        img {\r\n            display: block;\r\n            width: 100%;\r\n            opacity: 0.7;\r\n        }\r\n    }\r\n}\r\n</style>\r\n",
+      "start": 1710320468435,
+      "end": 1710320468796,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320468796,
+      "end": 1710320468796,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nconst _sfc_main = {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    props: {\r\n        shareUrl: Boolean,\r\n        shareFacebook: Boolean,\r\n        shareTwitter: Boolean\r\n    },\r\n    data() {\r\n        return {\r\n            urlText: window.location.href\r\n        };\r\n    },\r\n    methods: {\r\n        clip: function (val) {\r\n            const t = document.createElement(\"textarea\");\r\n            document.body.appendChild(t);\r\n            t.value = val;\r\n            t.select();\r\n            document.execCommand(\"copy\");\r\n            document.body.removeChild(t);\r\n            alert(\"주소가 복사되었습니다.\\n원하는 곳에 붙여넣기(Ctrl+V) 해주세요.\");\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareTw: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareFb: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);\r\n            this.modalStore.layerToggle(null);\r\n        }\r\n    }\r\n};\r\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<!--[-->`)\n  if ($props.shareUrl) {\n    _push(`<div data-v-eb83e9e4><a href=\"#\" data-v-eb83e9e4>URL 공유하기</a></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if ($props.shareFacebook) {\n    _push(`<div data-v-eb83e9e4><a href=\"#\" data-v-eb83e9e4>페이스북 공유하기</a></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if ($props.shareTwitter) {\n    _push(`<div data-v-eb83e9e4><a href=\"#\" data-v-eb83e9e4>트위터 공유하기</a></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`<!--]-->`)\n}\n\nimport \"C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue?vue&type=style&index=0&scoped=eb83e9e4&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/Share.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-eb83e9e4\"]])",
+      "start": 1710320468796,
+      "end": 1710320468799,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue",
+        "names": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue"
+        ],
+        "sourcesContent": [
+          "<template>\r\n    <div v-if=\"shareUrl\">\r\n        <a href=\"#\" @click.prevent=\"clip(urlText)\">URL 공유하기</a>\r\n    </div>\r\n    <div v-if=\"shareFacebook\">\r\n        <a href=\"#\" @click.prevent=\"btnShareFb\">페이스북 공유하기</a>\r\n    </div>\r\n    <div v-if=\"shareTwitter\">\r\n        <a href=\"#\" @click.prevent=\"btnShareTw\">트위터 공유하기</a>\r\n    </div>\r\n</template>\r\n\r\n<script>\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    props: {\r\n        shareUrl: Boolean,\r\n        shareFacebook: Boolean,\r\n        shareTwitter: Boolean\r\n    },\r\n    data() {\r\n        return {\r\n            urlText: window.location.href\r\n        };\r\n    },\r\n    methods: {\r\n        clip: function (val) {\r\n            const t = document.createElement(\"textarea\");\r\n            document.body.appendChild(t);\r\n            t.value = val;\r\n            t.select();\r\n            document.execCommand(\"copy\");\r\n            document.body.removeChild(t);\r\n            alert(\"주소가 복사되었습니다.\\n원하는 곳에 붙여넣기(Ctrl+V) 해주세요.\");\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareTw: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);\r\n            this.modalStore.layerToggle(null);\r\n        },\r\n        btnShareFb: function () {\r\n            const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\r\n            const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\r\n            window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);\r\n            this.modalStore.layerToggle(null);\r\n        }\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\ndiv {\r\n    height: 5.6rem;\r\n    margin-right: 0;\r\n    border-bottom: solid 1px #2d2d2d;\r\n    &:last-child {\r\n        border-bottom: none;\r\n    }\r\n    @include tablet {\r\n        height: 5rem;\r\n    }\r\n    a {\r\n        display: block;\r\n        padding: 1.4rem;\r\n        margin: 0.1rem;\r\n        box-sizing: border-box;\r\n        @include tablet {\r\n            padding: 0.8rem;\r\n        }\r\n        &:hover {\r\n            background-color: #1a1a1a;\r\n            > img {\r\n                opacity: 1;\r\n            }\r\n        }\r\n        img {\r\n            display: block;\r\n            width: 100%;\r\n            opacity: 0.7;\r\n        }\r\n    }\r\n}\r\n</style>\r\n"
+        ],
+        "mappings": ";AAaA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACJ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;YACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC9B,CAAC;IACL,CAAC;IACD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACxB,CAAC;IACD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACH,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;YACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAChC,CAAC;IACL,CAAC;IACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACL,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE;YACjB,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YAC5C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC;YACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YAChD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrC,CAAC;QACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE;YACpB,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;YAC3C,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YAC1D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YAC/E,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrC,CAAC;QACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE;YACpB,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;YAC3C,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YAC1D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YACpF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrC;IACJ;AACJ,CAAC;;;;EAtDD;MACe,eAAQ;IADvB;;IAAA;;MAIe,oBAAa;IAJ5B;;IAAA;;MAOe,mBAAY;IAP3B;;IAAA;;EAAA"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320468799,
+      "end": 1710320468799,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320468799,
+      "end": 1710320468799,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320468799,
+      "end": 1710320468799,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320468799,
+      "end": 1710320468827,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320468799,
+      "end": 1710320468827,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320468827,
+      "end": 1710320468827,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320468827,
+      "end": 1710320468827,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320468827,
+      "end": 1710320468827,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320468827,
+      "end": 1710320468827,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320468827,
+      "end": 1710320468829,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { useModalStore } from \"../store/useModalStore\";\nconst _sfc_main = {\n  setup() {\n    return {\n      modalStore: useModalStore()\n    };\n  },\n  props: {\n    shareUrl: Boolean,\n    shareFacebook: Boolean,\n    shareTwitter: Boolean\n  },\n  data() {\n    return {\n      urlText: (void 0).location.href\n    };\n  },\n  methods: {\n    clip: function(val) {\n      const t = (void 0).createElement(\"textarea\");\n      (void 0).body.appendChild(t);\n      t.value = val;\n      t.select();\n      (void 0).execCommand(\"copy\");\n      (void 0).body.removeChild(t);\n      alert(\"주소가 복사되었습니다.\\n원하는 곳에 붙여넣기(Ctrl+V) 해주세요.\");\n      this.modalStore.layerToggle(null);\n    },\n    btnShareTw: function() {\n      const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\n      const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\n      (void 0).open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);\n      this.modalStore.layerToggle(null);\n    },\n    btnShareFb: function() {\n      const sendText = \"어둠의 실력자가 되고 싶어서! 공식 홈페이지\";\n      const pageUrl = \"https://shadow-garden.webzen.co.kr/brand\";\n      (void 0).open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);\n      this.modalStore.layerToggle(null);\n    }\n  }\n};\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<!--[-->`);\n  if ($props.shareUrl) {\n    _push(`<div data-v-eb83e9e4><a href=\"#\" data-v-eb83e9e4>URL 공유하기</a></div>`);\n  } else {\n    _push(`<!---->`);\n  }\n  if ($props.shareFacebook) {\n    _push(`<div data-v-eb83e9e4><a href=\"#\" data-v-eb83e9e4>페이스북 공유하기</a></div>`);\n  } else {\n    _push(`<!---->`);\n  }\n  if ($props.shareTwitter) {\n    _push(`<div data-v-eb83e9e4><a href=\"#\" data-v-eb83e9e4>트위터 공유하기</a></div>`);\n  } else {\n    _push(`<!---->`);\n  }\n  _push(`<!--]-->`);\n}\nimport \"C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue?vue&type=style&index=0&scoped=eb83e9e4&lang.scss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/Share.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-eb83e9e4\"]]);\n",
+      "start": 1710320468829,
+      "end": 1710320469023,
+      "order": "normal",
+      "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue\"],\n  \"sourcesContent\": [\"\\r\\nimport { useModalStore } from \\\"../store/useModalStore\\\";\\r\\nconst _sfc_main = {\\r\\n    setup() {\\r\\n        return {\\r\\n            modalStore: useModalStore()\\r\\n        };\\r\\n    },\\r\\n    props: {\\r\\n        shareUrl: Boolean,\\r\\n        shareFacebook: Boolean,\\r\\n        shareTwitter: Boolean\\r\\n    },\\r\\n    data() {\\r\\n        return {\\r\\n            urlText: window.location.href\\r\\n        };\\r\\n    },\\r\\n    methods: {\\r\\n        clip: function (val) {\\r\\n            const t = document.createElement(\\\"textarea\\\");\\r\\n            document.body.appendChild(t);\\r\\n            t.value = val;\\r\\n            t.select();\\r\\n            document.execCommand(\\\"copy\\\");\\r\\n            document.body.removeChild(t);\\r\\n            alert(\\\"주소가 복사되었습니다.\\\\n원하는 곳에 붙여넣기(Ctrl+V) 해주세요.\\\");\\r\\n            this.modalStore.layerToggle(null);\\r\\n        },\\r\\n        btnShareTw: function () {\\r\\n            const sendText = \\\"어둠의 실력자가 되고 싶어서! 공식 홈페이지\\\";\\r\\n            const pageUrl = \\\"https://shadow-garden.webzen.co.kr/brand\\\";\\r\\n            window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);\\r\\n            this.modalStore.layerToggle(null);\\r\\n        },\\r\\n        btnShareFb: function () {\\r\\n            const sendText = \\\"어둠의 실력자가 되고 싶어서! 공식 홈페이지\\\";\\r\\n            const pageUrl = \\\"https://shadow-garden.webzen.co.kr/brand\\\";\\r\\n            window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);\\r\\n            this.modalStore.layerToggle(null);\\r\\n        }\\r\\n    }\\r\\n};\\r\\n\\n\\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\\n  _push(`<!--[-->`)\\n  if ($props.shareUrl) {\\n    _push(`<div data-v-eb83e9e4><a href=\\\"#\\\" data-v-eb83e9e4>URL 공유하기</a></div>`)\\n  } else {\\n    _push(`<!---->`)\\n  }\\n  if ($props.shareFacebook) {\\n    _push(`<div data-v-eb83e9e4><a href=\\\"#\\\" data-v-eb83e9e4>페이스북 공유하기</a></div>`)\\n  } else {\\n    _push(`<!---->`)\\n  }\\n  if ($props.shareTwitter) {\\n    _push(`<div data-v-eb83e9e4><a href=\\\"#\\\" data-v-eb83e9e4>트위터 공유하기</a></div>`)\\n  } else {\\n    _push(`<!---->`)\\n  }\\n  _push(`<!--]-->`)\\n}\\n\\nimport \\\"C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Share.vue?vue&type=style&index=0&scoped=eb83e9e4&lang.scss\\\"\\n\\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\\nconst _sfc_setup = _sfc_main.setup\\n_sfc_main.setup = (props, ctx) => {\\n  const ssrContext = __vite_useSSRContext()\\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\\\"components/Share.vue\\\")\\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\\n}\\nimport _export_sfc from '\\u0000plugin-vue:export-helper'\\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\\\"data-v-eb83e9e4\\\"]])\"],\n  \"mappings\": \"AACA,SAAS,qBAAqB;AAC9B,MAAM,YAAY;AAAA,EACd,QAAQ;AACJ,WAAO;AAAA,MACH,YAAY,cAAc;AAAA,IAC9B;AAAA,EACJ;AAAA,EACA,OAAO;AAAA,IACH,UAAU;AAAA,IACV,eAAe;AAAA,IACf,cAAc;AAAA,EAClB;AAAA,EACA,OAAO;AACH,WAAO;AAAA,MACH,SAAS,SAAO,SAAS;AAAA,IAC7B;AAAA,EACJ;AAAA,EACA,SAAS;AAAA,IACL,MAAM,SAAU,KAAK;AACjB,YAAM,IAAI,SAAS,cAAc,UAAU;AAC3C,eAAS,KAAK,YAAY,CAAC;AAC3B,QAAE,QAAQ;AACV,QAAE,OAAO;AACT,eAAS,YAAY,MAAM;AAC3B,eAAS,KAAK,YAAY,CAAC;AAC3B,YAAM,yCAAyC;AAC/C,WAAK,WAAW,YAAY,IAAI;AAAA,IACpC;AAAA,IACA,YAAY,WAAY;AACpB,YAAM,WAAW;AACjB,YAAM,UAAU;AAChB,eAAO,KAAK,yCAAyC,QAAQ,QAAQ,OAAO,EAAE;AAC9E,WAAK,WAAW,YAAY,IAAI;AAAA,IACpC;AAAA,IACA,YAAY,WAAY;AACpB,YAAM,WAAW;AACjB,YAAM,UAAU;AAChB,eAAO,KAAK,gDAAgD,OAAO,MAAM,QAAQ,EAAE;AACnF,WAAK,WAAW,YAAY,IAAI;AAAA,IACpC;AAAA,EACJ;AACJ;AAGA,SAAS,eAAe,MAAM,OAAO,SAAS,QAAQ,QAAQ,QAAQ,OAAO,UAAU;AACrF,QAAM,UAAU;AAChB,MAAI,OAAO,UAAU;AACnB,UAAM,qEAAqE;AAAA,EAC7E,OAAO;AACL,UAAM,SAAS;AAAA,EACjB;AACA,MAAI,OAAO,eAAe;AACxB,UAAM,sEAAsE;AAAA,EAC9E,OAAO;AACL,UAAM,SAAS;AAAA,EACjB;AACA,MAAI,OAAO,cAAc;AACvB,UAAM,qEAAqE;AAAA,EAC7E,OAAO;AACL,UAAM,SAAS;AAAA,EACjB;AACA,QAAM,UAAU;AAClB;AAEA,OAAO;AAEP,SAAS,iBAAiB,4BAA4B;AACtD,MAAM,aAAa,UAAU;AAC7B,UAAU,QAAQ,CAAC,OAAO,QAAQ;AAChC,QAAM,aAAa,qBAAqB;AACvC,GAAC,WAAW,YAAY,WAAW,UAAU,oBAAI,IAAI,IAAI,IAAI,sBAAsB;AACpF,SAAO,aAAa,WAAW,OAAO,GAAG,IAAI;AAC/C;AACA,OAAO,iBAAiB;AACxB,eAA4B,4BAAY,WAAW,CAAC,CAAC,aAAY,cAAc,GAAE,CAAC,aAAY,iBAAiB,CAAC,CAAC;\",\n  \"names\": []\n}\n"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710320469023,
+      "end": 1710320469023,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320469023,
+      "end": 1710320469024,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320469024,
+      "end": 1710320469024,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320469024,
+      "end": 1710320469024,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320469024,
+      "end": 1710320469024,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320469024,
+      "end": 1710320469024,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320469024,
+      "end": 1710320469024,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469024,
+      "end": 1710320469024,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469024,
+      "end": 1710320469024,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469024,
+      "end": 1710320469026,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469024,
+      "end": 1710320469026,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469026,
+      "end": 1710320469027,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469026,
+      "end": 1710320469027,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469027,
+      "end": 1710320469027,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469027,
+      "end": 1710320469027,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710320469027,
+      "end": 1710320469027,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320469027,
+      "end": 1710320469027,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320469027,
+      "end": 1710320469027,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320469027,
+      "end": 1710320469027,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320469027,
+      "end": 1710320469027,
+      "order": "normal"
+    }
+  ]
+}

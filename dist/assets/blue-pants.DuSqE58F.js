@@ -1,0 +1,1 @@
+import{_ as t}from"./nuxt-layout.C4ffjC9N.js";import{_ as n}from"./entry.B7Il_uJT.js";import{A as e,z as _}from"./swiper-vue.e2OLCNzz.js";const c={};function r(a,s){const o=t;return _(),e(o,{name:"bluePants"})}const u=n(c,[["render",r]]);export{u as default};
