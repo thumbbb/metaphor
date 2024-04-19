@@ -52,7 +52,6 @@
         "nuxt-swiper": "^1.2.2",
         "pinia": "^2.1.6"
     },
-    "packageManager": "yarn@3.6.1",
     "overrides": {
         "string-width": "4.2.3"
     }
