@@ -20,7 +20,8 @@
         "lint": "eslint \"**/*.{ts,tsx,vue,js}\" --fix",
         "lint-eslint": "eslint --ignore-path .gitignore **/*{ts,tsx,vue,js} --fix",
         "lint-prettier": "prettier --write \"**/*.(ts|tsx|vue|js|json)\"",
-        "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
+        "vercel": "vercel dev",
+        "deploy": "vercel deploy"
     },
     "devDependencies": {
         "@nuxt/devtools": "latest",
@@ -51,8 +52,7 @@
         "nuxt-swiper": "^1.2.2",
         "pinia": "^2.1.6"
     },
-    "packageManager": "yarn@3.6.1",
-    "overrides": {
+    "resolutions": {
         "string-width": "4.2.3"
     }
 }
