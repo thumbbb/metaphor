@@ -1,0 +1,271 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <button type=\"button\" class=\"top-btn\" @click=\"indexStore.goToPage(0)\">\r\n        <span class=\"top-btn-txt\">TOP</span>\r\n    </button>\r\n</template>\r\n\r\n<script>\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            indexStore: useIndexStore()\r\n        };\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\">\r\n.top-btn {\r\n    position: fixed;\r\n    right: 3%;\r\n    bottom: 30%;\r\n    z-index: 999;\r\n    touch-action: none;\r\n    padding: 0 3rem;\r\n    height: 4rem;\r\n    @include tablet {\r\n        right: 5%;\r\n        bottom: 28%;\r\n    }\r\n    &:after {\r\n        content: \"\";\r\n        display: block;\r\n        width: 100%;\r\n        height: 100%;\r\n        background-color: rgba(0, 0, 0, 0.63);\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        bottom: 0;\r\n        right: 0;\r\n        margin: auto;\r\n        z-index: 20;\r\n    }\r\n    &-txt {\r\n        display: block;\r\n        font-size: 1.5rem;\r\n        color: #fff;\r\n        position: relative;\r\n        z-index: 25;\r\n        margin: auto;\r\n        line-height: 4rem;\r\n        text-align: center;\r\n        &:after {\r\n            content: \"↑\";\r\n            display: inline-block;\r\n            width: 1.5rem;\r\n            //height: 1.7rem;\r\n            margin: 0 0 0.3rem 0.5rem;\r\n            vertical-align: middle;\r\n            //background: {\r\n            //    image: url(\"@images/common/ico-top.png\");\r\n            //    repeat: no-repeat;\r\n            //    position: center;\r\n            //    size: contain;\r\n            //}\r\n        }\r\n    }\r\n}\r\n</style>\r\n",
+      "start": 1710320468436,
+      "end": 1710320468891,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320468891,
+      "end": 1710320468891,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nconst _sfc_main = {\r\n    setup() {\r\n        return {\r\n            indexStore: useIndexStore()\r\n        };\r\n    }\r\n};\r\n\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<button${_ssrRenderAttrs(_mergeProps({\n    type: \"button\",\n    class: \"top-btn\"\n  }, _attrs))}><span class=\"top-btn-txt\">TOP</span></button>`)\n}\n\nimport \"C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue?vue&type=style&index=0&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/Top-btn.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1710320468891,
+      "end": 1710320468893,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue",
+        "names": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue"
+        ],
+        "sourcesContent": [
+          "<template>\r\n    <button type=\"button\" class=\"top-btn\" @click=\"indexStore.goToPage(0)\">\r\n        <span class=\"top-btn-txt\">TOP</span>\r\n    </button>\r\n</template>\r\n\r\n<script>\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            indexStore: useIndexStore()\r\n        };\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\">\r\n.top-btn {\r\n    position: fixed;\r\n    right: 3%;\r\n    bottom: 30%;\r\n    z-index: 999;\r\n    touch-action: none;\r\n    padding: 0 3rem;\r\n    height: 4rem;\r\n    @include tablet {\r\n        right: 5%;\r\n        bottom: 28%;\r\n    }\r\n    &:after {\r\n        content: \"\";\r\n        display: block;\r\n        width: 100%;\r\n        height: 100%;\r\n        background-color: rgba(0, 0, 0, 0.63);\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        bottom: 0;\r\n        right: 0;\r\n        margin: auto;\r\n        z-index: 20;\r\n    }\r\n    &-txt {\r\n        display: block;\r\n        font-size: 1.5rem;\r\n        color: #fff;\r\n        position: relative;\r\n        z-index: 25;\r\n        margin: auto;\r\n        line-height: 4rem;\r\n        text-align: center;\r\n        &:after {\r\n            content: \"↑\";\r\n            display: inline-block;\r\n            width: 1.5rem;\r\n            //height: 1.7rem;\r\n            margin: 0 0 0.3rem 0.5rem;\r\n            vertical-align: middle;\r\n            //background: {\r\n            //    image: url(\"@images/common/ico-top.png\");\r\n            //    repeat: no-repeat;\r\n            //    position: center;\r\n            //    size: contain;\r\n            //}\r\n        }\r\n    }\r\n}\r\n</style>\r\n"
+        ],
+        "mappings": ";AAOA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACJ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;YACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC9B,CAAC;IACL;AACJ,CAAC;;;;;;EAdD,gBAAA,gBAAA;IACY,IAAI,EAAC,QAAQ;IAAC,KAAK,EAAC,SAAS;KADzC"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320468893,
+      "end": 1710320468893,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320468893,
+      "end": 1710320468893,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320468893,
+      "end": 1710320468893,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320468893,
+      "end": 1710320468909,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320468893,
+      "end": 1710320468909,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320468909,
+      "end": 1710320468909,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320468909,
+      "end": 1710320468909,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320468909,
+      "end": 1710320468909,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320468909,
+      "end": 1710320468909,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320468909,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320468911,
+      "end": 1710320468911,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320468911,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320468911,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320468912,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320468912,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320468912,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320468912,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710320468912,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320468912,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320468912,
+      "end": 1710320468912,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320468912,
+      "end": 1710320468912,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320468913,
+      "end": 1710320468913,
+      "order": "normal"
+    }
+  ]
+}

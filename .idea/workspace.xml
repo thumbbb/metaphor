@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98471dcb-a082-4833-9e87-c3968ce7628e" name="변경" comment="test: layout -&gt; layouts로 변경, Header 노출 확인함" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="2bLQfuo1AJbsfaGp9LcZ0ADT8XG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\thumb\\Desktop\\이엄지\\이엄지\\dldjawl\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\thumb\\Desktop\\이엄지\\이엄지\\dldjawl\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\thumb\\Desktop\\이엄지\\이엄지\\dldjawl\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl\components" />
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl\layout" />
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl\assets\images\bluePants" />
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl\pages" />
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl\pages" />
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl\layout" />
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl\public" />
+      <recent name="C:\Users\thumb\Desktop\이엄지\이엄지\dldjawl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.build-dev">
+    <configuration name="build-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="generate" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint-eslint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint-eslint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint-prettier" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint-prettier" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build-dev" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.lint-prettier" />
+        <item itemvalue="npm.lint-eslint" />
+        <item itemvalue="npm.generate" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="98471dcb-a082-4833-9e87-c3968ce7628e" name="변경" comment="" />
+      <created>1705991985337</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705991985337</updated>
+      <workItem from="1705991987008" duration="10336000" />
+      <workItem from="1706065266904" duration="9586000" />
+      <workItem from="1706087559262" duration="2150000" />
+      <workItem from="1709703579926" duration="246000" />
+      <workItem from="1709703835108" duration="724000" />
+      <workItem from="1709704572986" duration="404000" />
+      <workItem from="1709704986440" duration="825000" />
+      <workItem from="1710146274006" duration="3626000" />
+      <workItem from="1710203678500" duration="1189000" />
+      <workItem from="1710288880070" duration="3382000" />
+      <workItem from="1710320759634" duration="314000" />
+      <workItem from="1710321146195" duration="30000" />
+      <workItem from="1710375347475" duration="1350000" />
+      <workItem from="1710376724443" duration="2804000" />
+      <workItem from="1710393559993" duration="4544000" />
+      <workItem from="1710469072531" duration="4307000" />
+      <workItem from="1710749998005" duration="1563000" />
+      <workItem from="1710807798638" duration="1136000" />
+      <workItem from="1710810943185" duration="619000" />
+      <workItem from="1710811998949" duration="7127000" />
+      <workItem from="1710833481061" duration="2722000" />
+      <workItem from="1711413335779" duration="619000" />
+    </task>
+    <task id="LOCAL-00001" summary="기본 포폴 업로드">
+      <created>1705992224772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705992224772</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: vue 형상 업로드">
+      <created>1705993587990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705993587990</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: vue 형상 정적 pages로 업데이트">
+      <created>1705995327151</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705995327151</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: vue 형상 정적 pages로 업데이트">
+      <created>1705996392180</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705996392180</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test: vue index page">
+      <created>1705997359323</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705997359323</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test: vue index page">
+      <created>1705997761001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705997761001</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test: vue index page">
+      <created>1705998172781</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705998172781</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test: vue bluePants 추가">
+      <created>1709704339498</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709704339498</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test: layout -&gt; layouts로 변경, Header 노출 확인함">
+      <created>1710835467055</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710835467055</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="기본 포폴 업로드" />
+    <MESSAGE value="feat: vue 형상 업로드" />
+    <MESSAGE value="feat: vue 형상 정적 pages로 업데이트" />
+    <MESSAGE value="test: vue index page" />
+    <MESSAGE value="test: vue bluePants 추가" />
+    <MESSAGE value="test: layout -&gt; layouts로 변경, Header 노출 확인함" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: layout -&gt; layouts로 변경, Header 노출 확인함" />
+  </component>
+</project>

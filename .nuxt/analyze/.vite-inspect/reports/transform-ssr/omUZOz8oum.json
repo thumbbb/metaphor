@@ -1,0 +1,303 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue?vue&type=style&index=0&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n.top-btn {\r\n    position: fixed;\r\n    right: 3%;\r\n    bottom: 30%;\r\n    z-index: 999;\r\n    touch-action: none;\r\n    padding: 0 3rem;\r\n    height: 4rem;\r\n    @include tablet {\r\n        right: 5%;\r\n        bottom: 28%;\r\n    }\r\n    &:after {\r\n        content: \"\";\r\n        display: block;\r\n        width: 100%;\r\n        height: 100%;\r\n        background-color: rgba(0, 0, 0, 0.63);\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        bottom: 0;\r\n        right: 0;\r\n        margin: auto;\r\n        z-index: 20;\r\n    }\r\n    &-txt {\r\n        display: block;\r\n        font-size: 1.5rem;\r\n        color: #fff;\r\n        position: relative;\r\n        z-index: 25;\r\n        margin: auto;\r\n        line-height: 4rem;\r\n        text-align: center;\r\n        &:after {\r\n            content: \"↑\";\r\n            display: inline-block;\r\n            width: 1.5rem;\r\n            //height: 1.7rem;\r\n            margin: 0 0 0.3rem 0.5rem;\r\n            vertical-align: middle;\r\n            //background: {\r\n            //    image: url(\"@images/common/ico-top.png\");\r\n            //    repeat: no-repeat;\r\n            //    position: center;\r\n            //    size: contain;\r\n            //}\r\n        }\r\n    }\r\n}\r\n",
+      "start": 1710320469011,
+      "end": 1710320469011,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n    <button type=\"button\" class=\"top-btn\" @click=\"indexStore.goToPage(0)\">\r\n        <span class=\"top-btn-txt\">TOP</span>\r\n    </button>\r\n</template>\r\n\r\n<script>\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            indexStore: useIndexStore()\r\n        };\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\">\r\n.top-btn {\r\n    position: fixed;\r\n    right: 3%;\r\n    bottom: 30%;\r\n    z-index: 999;\r\n    touch-action: none;\r\n    padding: 0 3rem;\r\n    height: 4rem;\r\n    @include tablet {\r\n        right: 5%;\r\n        bottom: 28%;\r\n    }\r\n    &:after {\r\n        content: \"\";\r\n        display: block;\r\n        width: 100%;\r\n        height: 100%;\r\n        background-color: rgba(0, 0, 0, 0.63);\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        bottom: 0;\r\n        right: 0;\r\n        margin: auto;\r\n        z-index: 20;\r\n    }\r\n    &-txt {\r\n        display: block;\r\n        font-size: 1.5rem;\r\n        color: #fff;\r\n        position: relative;\r\n        z-index: 25;\r\n        margin: auto;\r\n        line-height: 4rem;\r\n        text-align: center;\r\n        &:after {\r\n            content: \"↑\";\r\n            display: inline-block;\r\n            width: 1.5rem;\r\n            //height: 1.7rem;\r\n            margin: 0 0 0.3rem 0.5rem;\r\n            vertical-align: middle;\r\n            //background: {\r\n            //    image: url(\"@images/common/ico-top.png\");\r\n            //    repeat: no-repeat;\r\n            //    position: center;\r\n            //    size: contain;\r\n            //}\r\n        }\r\n    }\r\n}\r\n</style>\r\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320469011,
+      "end": 1710320469011,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320469011,
+      "end": 1710320469011,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320469011,
+      "end": 1710320469011,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320469011,
+      "end": 1710320469011,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320469011,
+      "end": 1710320469011,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "@charset \"UTF-8\";.pc-element{display:block}@media (width <= 1279px){.pc-element{display:none}}.mo-element{display:none}@media (width <= 1279px){.mo-element{display:block}}.top-btn{bottom:30%;height:4rem;padding:0 3rem;position:fixed;right:3%;touch-action:none;z-index:999}@media (width <= 1279px){.top-btn{bottom:28%;right:5%}}.top-btn:after{background-color:rgba(0,0,0,.63);bottom:0;content:\"\";display:block;height:100%;left:0;margin:auto;position:absolute;right:0;top:0;width:100%;z-index:20}.top-btn-txt{color:#fff;display:block;font-size:1.5rem;line-height:4rem;margin:auto;position:relative;text-align:center;z-index:25}.top-btn-txt:after{content:\"↑\";display:inline-block;margin:0 0 .3rem .5rem;vertical-align:middle;width:1.5rem}",
+      "start": 1710320469011,
+      "end": 1710320469383,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue",
+        "mappings": "AAoCQ,iBCYR,YACI,cA/CA,yBA8CJ,YAGQ,cAIR,YACI,aAtDA,yBAqDJ,YAGQ,eDzDR,SAGI,WAIA,YADA,eALA,eACA,SAGA,kBADA,YCHA,yBDDJ,SAUQ,WADA,UAGJ,eAKI,iCAIA,SARA,WACA,cAEA,YAGA,OAIA,YALA,kBAIA,QAFA,MALA,WASA,WAEJ,aAGI,WAFA,cACA,iBAKA,iBADA,YAFA,kBAIA,kBAHA,WAIA,mBACI,YACA,qBAGA,uBACA,sBAHA",
+        "names": [],
+        "ignoreList": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue",
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/assets/styles/abstracts/_mixins.scss"
+        ],
+        "sourcesContent": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "@charset \"UTF-8\";.pc-element{display:block}@media (width <= 1279px){.pc-element{display:none}}.mo-element{display:none}@media (width <= 1279px){.mo-element{display:block}}.top-btn{bottom:30%;height:4rem;padding:0 3rem;position:fixed;right:3%;touch-action:none;z-index:999}@media (width <= 1279px){.top-btn{bottom:28%;right:5%}}.top-btn:after{background-color:rgba(0,0,0,.63);bottom:0;content:\"\";display:block;height:100%;left:0;margin:auto;position:absolute;right:0;top:0;width:100%;z-index:20}.top-btn-txt{color:#fff;display:block;font-size:1.5rem;line-height:4rem;margin:auto;position:relative;text-align:center;z-index:25}.top-btn-txt:after{content:\"↑\";display:inline-block;margin:0 0 .3rem .5rem;vertical-align:middle;width:1.5rem}",
+      "start": 1710320469386,
+      "end": 1710320469390,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue",
+        "mappings": "AAAA,gBAAgB,CAAC,YAAY,aAAa,CAAC,yBAAyB,YAAY,YAAY,CAAC,CAAC,YAAY,YAAY,CAAC,yBAAyB,YAAY,aAAa,CAAC,CAAC,SAAS,UAAU,CAAC,WAAW,CAAC,cAAc,CAAC,cAAc,CAAC,QAAQ,CAAC,iBAAiB,CAAC,WAAW,CAAC,yBAAyB,SAAS,UAAU,CAAC,QAAQ,CAAC,CAAC,eAAe,gCAAgC,CAAC,QAAQ,CAAC,UAAU,CAAC,aAAa,CAAC,WAAW,CAAC,MAAM,CAAC,WAAW,CAAC,iBAAiB,CAAC,OAAO,CAAC,KAAK,CAAC,UAAU,CAAC,UAAU,CAAC,aAAa,UAAU,CAAC,aAAa,CAAC,gBAAgB,CAAC,gBAAgB,CAAC,WAAW,CAAC,iBAAiB,CAAC,iBAAiB,CAAC,UAAU,CAAC,mBAAmB,WAAW,CAAC,oBAAoB,CAAC,sBAAsB,CAAC,qBAAqB,CAAC,YAAY",
+        "names": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320469390,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320469390,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320469552,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320469552,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320469553,
+      "end": 1710320469557,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710320469557,
+      "end": 1710320469557,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320469559,
+      "end": 1710320469559,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320469559,
+      "end": 1710320469560,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469560,
+      "end": 1710320469560,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710320469560,
+      "end": 1710320469561,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320469561,
+      "end": 1710320469561,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320469561,
+      "end": 1710320469561,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320469561,
+      "end": 1710320469561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320469561,
+      "end": 1710320469561,
+      "order": "normal"
+    }
+  ]
+}

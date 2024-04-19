@@ -1,0 +1,220 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <button type=\"button\" class=\"top-btn\" @click=\"indexStore.goToPage(0)\">\r\n        <span class=\"top-btn-txt\">TOP</span>\r\n    </button>\r\n</template>\r\n\r\n<script>\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            indexStore: useIndexStore()\r\n        };\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\">\r\n.top-btn {\r\n    position: fixed;\r\n    right: 3%;\r\n    bottom: 30%;\r\n    z-index: 999;\r\n    touch-action: none;\r\n    padding: 0 3rem;\r\n    height: 4rem;\r\n    @include tablet {\r\n        right: 5%;\r\n        bottom: 28%;\r\n    }\r\n    &:after {\r\n        content: \"\";\r\n        display: block;\r\n        width: 100%;\r\n        height: 100%;\r\n        background-color: rgba(0, 0, 0, 0.63);\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        bottom: 0;\r\n        right: 0;\r\n        margin: auto;\r\n        z-index: 20;\r\n    }\r\n    &-txt {\r\n        display: block;\r\n        font-size: 1.5rem;\r\n        color: #fff;\r\n        position: relative;\r\n        z-index: 25;\r\n        margin: auto;\r\n        line-height: 4rem;\r\n        text-align: center;\r\n        &:after {\r\n            content: \"↑\";\r\n            display: inline-block;\r\n            width: 1.5rem;\r\n            //height: 1.7rem;\r\n            margin: 0 0 0.3rem 0.5rem;\r\n            vertical-align: middle;\r\n            //background: {\r\n            //    image: url(\"@images/common/ico-top.png\");\r\n            //    repeat: no-repeat;\r\n            //    position: center;\r\n            //    size: contain;\r\n            //}\r\n        }\r\n    }\r\n}\r\n</style>\r\n",
+      "start": 1710320464999,
+      "end": 1710320465597,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320465597,
+      "end": 1710320465597,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320465597,
+      "end": 1710320465597,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320465597,
+      "end": 1710320465597,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710320465597,
+      "end": 1710320465597,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320465597,
+      "end": 1710320465597,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320465597,
+      "end": 1710320465597,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320465597,
+      "end": 1710320465597,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nconst _sfc_main = {\r\n    setup() {\r\n        return {\r\n            indexStore: useIndexStore()\r\n        };\r\n    }\r\n};\r\n\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"top-btn-txt\" }, \"TOP\", -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"button\", {\n    type: \"button\",\n    class: \"top-btn\",\n    onClick: _cache[0] || (_cache[0] = $event => ($setup.indexStore.goToPage(0)))\n  }, _hoisted_2))\n}\n\nimport \"C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Top-btn.vue?vue&type=style&index=0&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1710320465597,
+      "end": 1710320465599,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320465599,
+      "end": 1710320465599,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320465599,
+      "end": 1710320465599,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320465599,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320465620,
+      "end": 1710320465620,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320465620,
+      "end": 1710320465621,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320465621,
+      "end": 1710320465621,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320465621,
+      "end": 1710320465621,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710320465621,
+      "end": 1710320465621,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710320465621,
+      "end": 1710320465621,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320465621,
+      "end": 1710320465621,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320465621,
+      "end": 1710320465621,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320465621,
+      "end": 1710320465621,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320465621,
+      "end": 1710320465621,
+      "order": "normal"
+    }
+  ]
+}

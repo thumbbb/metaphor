@@ -1,0 +1,303 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Layer.vue?vue&type=style&index=0&scoped=8934c795&lang.scss?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n.dimmed {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: 1500;\r\n    background: rgba(0 0 0 / 80%);\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    .layer {\r\n        position: relative;\r\n        z-index: 1510;\r\n        width: 50%;\r\n        max-width: 50rem;\r\n        min-height: 22rem;\r\n        background: #3c3c3c;\r\n        padding: 2rem 2rem 3rem;\r\n        @include tablet {\r\n            width: 90%;\r\n            max-width: 60rem;\r\n            max-height: 60rem;\r\n        }\r\n        @include device-rotate {\r\n            min-height: auto;\r\n            height: 90%;\r\n        }\r\n\r\n        .close-btn {\r\n        }\r\n    }\r\n}\r\n",
+      "start": 1710320468888,
+      "end": 1710320468888,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Layer.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Layer.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n    <div v-if=\"modalStore.layerType === 'test'\" class=\"dimmed\" @click=\"closeLayerOutside($event)\">\r\n        <div class=\"layer\">\r\n            <button class=\"close-btn\" @click=\"closeLayer($event)\">\r\n                <img src=\"@images/common/ico-close.png\" alt=\"\" />\r\n            </button>\r\n        </div>\r\n    </div>\r\n</template>\r\n\r\n<script>\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    methods: {\r\n        closeLayerOutside($event) {\r\n            const layerTarget = this.modalStore.layerTarget;\r\n\r\n            if ($event.target.closest(\".\" + layerTarget)) {\r\n                return true;\r\n            } else if (!$event.target.closest(\".\" + layerTarget)) {\r\n                this.modalStore.layerVisible = false;\r\n                this.modalStore.layerTarget = null;\r\n            }\r\n        },\r\n        closeLayer($event) {\r\n            this.modalStore.layerVisible = false;\r\n            this.modalStore.layerTarget = null;\r\n        }\r\n    },\r\n    mounted() {}\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\n.dimmed {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: 1500;\r\n    background: rgba(0 0 0 / 80%);\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    .layer {\r\n        position: relative;\r\n        z-index: 1510;\r\n        width: 50%;\r\n        max-width: 50rem;\r\n        min-height: 22rem;\r\n        background: #3c3c3c;\r\n        padding: 2rem 2rem 3rem;\r\n        @include tablet {\r\n            width: 90%;\r\n            max-width: 60rem;\r\n            max-height: 60rem;\r\n        }\r\n        @include device-rotate {\r\n            min-height: auto;\r\n            height: 90%;\r\n        }\r\n\r\n        .close-btn {\r\n        }\r\n    }\r\n}\r\n</style>\r\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468888,
+      "end": 1710320468888,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320468888,
+      "end": 1710320468888,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468888,
+      "end": 1710320468888,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320468888,
+      "end": 1710320468888,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320468889,
+      "end": 1710320468889,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".pc-element{display:block}@media (width <= 1279px){.pc-element{display:none}}.mo-element{display:none}@media (width <= 1279px){.mo-element{display:block}}.dimmed{align-items:center;background:rgba(0,0,0,.8);display:flex;height:100%;justify-content:center;left:0;position:fixed;right:0;top:0;width:100%;z-index:1500}.dimmed .layer{background:#3c3c3c;max-width:50rem;min-height:22rem;padding:2rem 2rem 3rem;position:relative;width:50%;z-index:1510}@media (width <= 1279px){.dimmed .layer{max-height:60rem;max-width:60rem;width:90%}}@media (height <= 420px){.dimmed .layer{height:90%;min-height:auto}}",
+      "start": 1710320468889,
+      "end": 1710320469383,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Layer.vue",
+        "mappings": "AAgDA,YACI,cA/CA,yBA8CJ,YAGQ,cAIR,YACI,aAtDA,yBAqDJ,YAGQ,eCzDR,QAUI,mBAFA,0BACA,aAPA,YASA,uBANA,OAFA,eAGA,QAFA,MAHA,WAMA,aAKA,eAMI,mBAFA,gBACA,iBAEA,uBANA,kBAEA,UADA,aDbJ,yBCWA,eAWQ,iBADA,gBADA,WDIR,yBCbA,eAeQ,WADA",
+        "names": [],
+        "ignoreList": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/assets/styles/abstracts/_mixins.scss",
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Layer.vue"
+        ],
+        "sourcesContent": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320469383,
+      "end": 1710320469383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".pc-element[data-v-8934c795]{display:block}@media (width <= 1279px){.pc-element[data-v-8934c795]{display:none}}.mo-element[data-v-8934c795]{display:none}@media (width <= 1279px){.mo-element[data-v-8934c795]{display:block}}.dimmed[data-v-8934c795]{align-items:center;background:rgba(0,0,0,.8);display:flex;height:100%;justify-content:center;left:0;position:fixed;right:0;top:0;width:100%;z-index:1500}.dimmed .layer[data-v-8934c795]{background:#3c3c3c;max-width:50rem;min-height:22rem;padding:2rem 2rem 3rem;position:relative;width:50%;z-index:1510}@media (width <= 1279px){.dimmed .layer[data-v-8934c795]{max-height:60rem;max-width:60rem;width:90%}}@media (height <= 420px){.dimmed .layer[data-v-8934c795]{height:90%;min-height:auto}}",
+      "start": 1710320469384,
+      "end": 1710320469390,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Layer.vue",
+        "mappings": "AAAA,6BAAY,aAAa,CAAC,yBAAyB,6BAAY,YAAY,CAAC,CAAC,6BAAY,YAAY,CAAC,yBAAyB,6BAAY,aAAa,CAAC,CAAC,yBAAQ,kBAAkB,CAAC,yBAAyB,CAAC,YAAY,CAAC,WAAW,CAAC,sBAAsB,CAAC,MAAM,CAAC,cAAc,CAAC,OAAO,CAAC,KAAK,CAAC,UAAU,CAAC,YAAY,CAAC,gCAAe,kBAAkB,CAAC,eAAe,CAAC,gBAAgB,CAAC,sBAAsB,CAAC,iBAAiB,CAAC,SAAS,CAAC,YAAY,CAAC,yBAAyB,gCAAe,gBAAgB,CAAC,eAAe,CAAC,SAAS,CAAC,CAAC,yBAAyB,gCAAe,UAAU,CAAC,eAAe,CAAC",
+        "names": [],
+        "sources": [
+          "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Layer.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469390,
+      "end": 1710320469390,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320469391,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320469391,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320469552,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320469552,
+      "end": 1710320469552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320469553,
+      "end": 1710320469553,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710320469553,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".pc-element[data-v-8934c795]{display:block}@media (width <= 1279px){.pc-element[data-v-8934c795]{display:none}}.mo-element[data-v-8934c795]{display:none}@media (width <= 1279px){.mo-element[data-v-8934c795]{display:block}}.dimmed[data-v-8934c795]{align-items:center;background:rgba(0,0,0,.8);display:flex;height:100%;justify-content:center;left:0;position:fixed;right:0;top:0;width:100%;z-index:1500}.dimmed .layer[data-v-8934c795]{background:#3c3c3c;max-width:50rem;min-height:22rem;padding:2rem 2rem 3rem;position:relative;width:50%;z-index:1510}@media (width <= 1279px){.dimmed .layer[data-v-8934c795]{max-height:60rem;max-width:60rem;width:90%}}@media (height <= 420px){.dimmed .layer[data-v-8934c795]{height:90%;min-height:auto}}\"",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320469554,
+      "end": 1710320469554,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320469555,
+      "end": 1710320469555,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469556,
+      "end": 1710320469556,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320469556,
+      "end": 1710320469556,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710320469556,
+      "end": 1710320469557,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320469557,
+      "end": 1710320469557,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320469557,
+      "end": 1710320469558,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320469558,
+      "end": 1710320469558,
+      "order": "normal"
+    }
+  ]
+}

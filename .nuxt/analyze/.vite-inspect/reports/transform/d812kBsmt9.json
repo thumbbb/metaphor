@@ -1,0 +1,220 @@
+{
+  "resolvedId": "C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Snb.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <nav id=\"snb\" class=\"snb\">\r\n        <div class=\"mob-snb-header\">\r\n            <a href=\"#\" class=\"snb-logo\"><img src=\"\" alt=\"Snb 로고\" /></a>\r\n            <button class=\"snb-close\" @click=\"modalStore.layerToggle(null)\"><img src=\"\" alt=\"Snb 닫기\" /></button>\r\n        </div>\r\n        <ul class=\"snb-list\">\r\n            <li data-menuanchor=\"pre-register\" class=\"snb-menu\">\r\n                <a href=\"#\" :class=\"{ __active: indexStore.currentPageIndex === 0 }\" @click.prevent=\"[indexStore.goToPage(0), mobileSnbClose()]\">화면1</a>\r\n            </li>\r\n            <li data-menuanchor=\"event\" class=\"snb-menu\">\r\n                <a href=\"#\" :class=\"{ __active: indexStore.currentPageIndex === 1 }\" @click.prevent=\"[indexStore.goToPage(1), mobileSnbClose()]\">화면2</a>\r\n            </li>\r\n            <li data-menuanchor=\"event-sns\" class=\"snb-menu\">\r\n                <a href=\"#\" :class=\"{ __active: indexStore.currentPageIndex === 2 }\" @click.prevent=\"[indexStore.goToPage(2), mobileSnbClose()]\">화면3</a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n</template>\r\n\r\n<script>\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nexport default {\r\n    setup() {\r\n        return {\r\n            indexStore: useIndexStore(),\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    methods: {\r\n        mobileSnbClose() {\r\n            document.getElementById(\"snb\").classList.remove(\"__active\");\r\n            document.querySelector(\".snb-bg\").classList.remove(\"__active\");\r\n            document.getElementById(\"snb\").scrollTo(0, 0);\r\n            setTimeout(() => this.modalStore.layerToggle(null), 700);\r\n        }\r\n    }\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\">\r\n#snb {\r\n    position: fixed;\r\n    z-index: 1000;\r\n    width: 17.3rem;\r\n    height: 40%;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    margin: auto 0;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n    justify-content: flex-start;\r\n    font-size: 2rem;\r\n    line-height: 4.4rem;\r\n    min-height: 40rem;\r\n    background-color: #0000003d;\r\n    @include tablet {\r\n        right: 0;\r\n        top: 0;\r\n        left: unset;\r\n        bottom: unset;\r\n        max-width: 50rem;\r\n        width: 60%;\r\n        height: 100vh;\r\n        align-items: flex-start;\r\n        justify-content: space-between;\r\n        -webkit-transform: translateX(100%);\r\n        transform: translateX(100%);\r\n        transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);\r\n        background-color: #171622;\r\n        padding: 0;\r\n        overflow-y: scroll;\r\n        -ms-overflow-style: none;\r\n        scrollbar-width: none;\r\n        @include mobile {\r\n            width: 70%;\r\n            max-height: 100%;\r\n            min-width: 23rem;\r\n        }\r\n        @include device-rotate {\r\n            min-height: 100%;\r\n            height: 100%;\r\n        }\r\n        &.__active {\r\n            -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n        }\r\n    }\r\n    .mob-snb-header {\r\n        display: none;\r\n        @include tablet {\r\n            display: flex;\r\n            justify-content: space-between;\r\n            align-items: center;\r\n            padding: 2rem;\r\n        }\r\n        .snb-logo {\r\n            display: block;\r\n            width: 50%;\r\n            > img {\r\n                width: 100%;\r\n            }\r\n        }\r\n        .snb-close {\r\n            width: 5rem;\r\n            height: 5rem;\r\n            border: solid 1px #3b3a41;\r\n            background-color: #100f18;\r\n            display: flex;\r\n            justify-content: center;\r\n            align-items: center;\r\n            > img {\r\n                width: 50%;\r\n            }\r\n        }\r\n    }\r\n    .snb-list {\r\n        margin-left: 3rem;\r\n        display: flex;\r\n        flex-direction: column;\r\n        justify-content: space-between;\r\n        height: 100%;\r\n        &:before {\r\n            content: \"\";\r\n            display: block;\r\n            width: 0.1rem;\r\n            height: 89%;\r\n            background-color: #b8b8b8;\r\n            position: absolute;\r\n            right: calc(100% - 2.5rem);\r\n            top: 2rem;\r\n            @include tablet {\r\n                display: none;\r\n            }\r\n        }\r\n        @include tablet {\r\n            width: 100%;\r\n            margin-left: 0;\r\n            align-items: center;\r\n        }\r\n        @include mobile {\r\n            height: 70%;\r\n        }\r\n        > li {\r\n            position: relative;\r\n            height: calc(100% / 8);\r\n            &:last-child {\r\n                border-bottom: none;\r\n            }\r\n            > a {\r\n                display: block;\r\n                font-size: 1.6rem;\r\n                color: #fff;\r\n                font-weight: 500;\r\n                padding-left: 1.5rem;\r\n                @include tablet {\r\n                    padding-left: 0;\r\n                    font-size: 2rem;\r\n                }\r\n                @include mobile {\r\n                    font-size: 1.5rem;\r\n                }\r\n                &:before,\r\n                &:after {\r\n                    content: \"\";\r\n                    display: block;\r\n                    position: absolute;\r\n                    right: 100%;\r\n                    background: {\r\n                        repeat: no-repeat;\r\n                        position: center;\r\n                        size: contain;\r\n                    }\r\n                    @include tablet {\r\n                        display: none;\r\n                    }\r\n                }\r\n                &:before {\r\n                    width: 1rem;\r\n                    height: 1rem;\r\n                    top: 1.7rem;\r\n                    //background-image: url(\"@images/common/ico-snb.png\");\r\n                }\r\n                &:after {\r\n                    display: none;\r\n                    width: 1.5rem;\r\n                    height: 2.5rem;\r\n                    top: 1rem;\r\n                    right: calc(100% - 0.25rem);\r\n                    //background-image: url(\"@images/common/ico-snb-active.png\");\r\n                }\r\n                &.__active {\r\n                    text-shadow: 0.3rem 0.2rem 1rem #ff1100;\r\n                    @include tablet {\r\n                        text-shadow: none;\r\n                    }\r\n                    &:before {\r\n                        display: none;\r\n                    }\r\n                    &:after {\r\n                        display: block;\r\n                        @include tablet {\r\n                            display: none;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        .snb-min-menu {\r\n            padding-left: 1rem;\r\n        }\r\n    }\r\n\r\n    .login-btn,\r\n    .logout-btn {\r\n        z-index: 999;\r\n        width: 100%;\r\n        @include tablet {\r\n            width: 60%;\r\n            margin: 0 auto 3rem;\r\n            &:hover {\r\n                &:after {\r\n                    display: none;\r\n                }\r\n            }\r\n        }\r\n        @include mobile {\r\n            width: 90%;\r\n        }\r\n        > span {\r\n            font-size: 1.6rem;\r\n            font-weight: bold;\r\n            color: #fff;\r\n            top: 1rem;\r\n            justify-content: flex-start;\r\n            width: 80%;\r\n            @include tablet {\r\n                justify-content: center;\r\n                left: -20%;\r\n            }\r\n            &:after {\r\n                content: \"\";\r\n                display: inline-block;\r\n                width: 1.5rem;\r\n                height: 1.5rem;\r\n                background: {\r\n                    //image: url(\"@images/common/ico-btn-arrow-w.png\");\r\n                    repeat: no-repeat;\r\n                    position: center;\r\n                    size: contain;\r\n                }\r\n                vertical-align: middle;\r\n                margin-left: 0.3rem;\r\n            }\r\n        }\r\n    }\r\n    .login-btn {\r\n        &:after {\r\n            //background-image: url(\"@images/common/snb-login-bg-hover.png\");\r\n        }\r\n    }\r\n    .logout-btn {\r\n        &:after {\r\n            display: none;\r\n        }\r\n    }\r\n    .mob-snb-footer {\r\n        display: none;\r\n        @include tablet {\r\n            display: flex;\r\n            align-items: center;\r\n            justify-content: center;\r\n            flex-direction: column;\r\n            width: 100%;\r\n            height: 20%;\r\n            background-color: #13121d;\r\n            padding: 3rem;\r\n            > ul {\r\n                display: flex;\r\n                justify-content: center;\r\n                align-items: center;\r\n                width: 90%;\r\n                gap: 1rem;\r\n            }\r\n            .download-list {\r\n                > li {\r\n                    > a {\r\n                        display: block;\r\n                        font-size: 1.5rem;\r\n                        color: #fff;\r\n                        &:after {\r\n                            content: \"\";\r\n                            display: inline-block;\r\n                            vertical-align: middle;\r\n                            margin-left: 1rem;\r\n                            width: 2rem;\r\n                            height: 2rem;\r\n                            //background: no-repeat center url(\"@images/common/ico-download.png\");\r\n                        }\r\n                    }\r\n                }\r\n                & + .sns-list {\r\n                    margin-top: 1rem;\r\n                }\r\n            }\r\n            .sns-list {\r\n                > li {\r\n                    width: 5rem;\r\n                    height: 5rem;\r\n                    background-color: #0d0d14;\r\n                    border: solid 1px #56565b;\r\n                    > a {\r\n                        display: block;\r\n                        padding: 1rem;\r\n                        box-sizing: border-box;\r\n                        height: 100%;\r\n                        > img {\r\n                            width: 100%;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n@keyframes opacity {\r\n    0% {\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n    }\r\n}\r\n</style>\r\n",
+      "start": 1710320464946,
+      "end": 1710320465293,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710320465293,
+      "end": 1710320465293,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710320465293,
+      "end": 1710320465293,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710320465293,
+      "end": 1710320465293,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710320465293,
+      "end": 1710320465293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710320465293,
+      "end": 1710320465293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710320465293,
+      "end": 1710320465293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710320465293,
+      "end": 1710320465293,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\nimport { useIndexStore } from \"../store/useIndexStore\";\r\nimport { useModalStore } from \"../store/useModalStore\";\r\nconst _sfc_main = {\r\n    setup() {\r\n        return {\r\n            indexStore: useIndexStore(),\r\n            modalStore: useModalStore()\r\n        };\r\n    },\r\n    methods: {\r\n        mobileSnbClose() {\r\n            document.getElementById(\"snb\").classList.remove(\"__active\");\r\n            document.querySelector(\".snb-bg\").classList.remove(\"__active\");\r\n            document.getElementById(\"snb\").scrollTo(0, 0);\r\n            setTimeout(() => this.modalStore.layerToggle(null), 700);\r\n        }\r\n    }\r\n};\r\n\nimport { createElementVNode as _createElementVNode, withModifiers as _withModifiers, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = {\n  id: \"snb\",\n  class: \"snb\"\n}\nconst _hoisted_2 = { class: \"mob-snb-header\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"a\", {\n  href: \"#\",\n  class: \"snb-logo\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: '',\n    alt: \"Snb 로고\"\n  })\n], -1)\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: '',\n  alt: \"Snb 닫기\"\n}, null, -1)\nconst _hoisted_5 = [\n  _hoisted_4\n]\nconst _hoisted_6 = { class: \"snb-list\" }\nconst _hoisted_7 = {\n  \"data-menuanchor\": \"pre-register\",\n  class: \"snb-menu\"\n}\nconst _hoisted_8 = {\n  \"data-menuanchor\": \"event\",\n  class: \"snb-menu\"\n}\nconst _hoisted_9 = {\n  \"data-menuanchor\": \"event-sns\",\n  class: \"snb-menu\"\n}\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"nav\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"button\", {\n        class: \"snb-close\",\n        onClick: _cache[0] || (_cache[0] = $event => ($setup.modalStore.layerToggle(null)))\n      }, _hoisted_5)\n    ]),\n    _createElementVNode(\"ul\", _hoisted_6, [\n      _createElementVNode(\"li\", _hoisted_7, [\n        _createElementVNode(\"a\", {\n          href: \"#\",\n          class: _normalizeClass({ __active: $setup.indexStore.currentPageIndex === 0 }),\n          onClick: _cache[1] || (_cache[1] = _withModifiers($event => ([$setup.indexStore.goToPage(0), $options.mobileSnbClose()]), [\"prevent\"]))\n        }, \"화면1\", 2)\n      ]),\n      _createElementVNode(\"li\", _hoisted_8, [\n        _createElementVNode(\"a\", {\n          href: \"#\",\n          class: _normalizeClass({ __active: $setup.indexStore.currentPageIndex === 1 }),\n          onClick: _cache[2] || (_cache[2] = _withModifiers($event => ([$setup.indexStore.goToPage(1), $options.mobileSnbClose()]), [\"prevent\"]))\n        }, \"화면2\", 2)\n      ]),\n      _createElementVNode(\"li\", _hoisted_9, [\n        _createElementVNode(\"a\", {\n          href: \"#\",\n          class: _normalizeClass({ __active: $setup.indexStore.currentPageIndex === 2 }),\n          onClick: _cache[3] || (_cache[3] = _withModifiers($event => ([$setup.indexStore.goToPage(2), $options.mobileSnbClose()]), [\"prevent\"]))\n        }, \"화면3\", 2)\n      ])\n    ])\n  ]))\n}\n\nimport \"C:/Users/thumb/Desktop/이엄지/이엄지/dldjawl/components/Snb.vue?vue&type=style&index=0&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1710320465293,
+      "end": 1710320465303,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710320465303,
+      "end": 1710320465303,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320465303,
+      "end": 1710320465303,
+      "order": "normal"
+    },
+    {
+      "name": "vite-plugin-eslint",
+      "start": 1710320465303,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710320465417,
+      "end": 1710320465417,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710320465417,
+      "end": 1710320465423,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710320465423,
+      "end": 1710320465423,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710320465423,
+      "end": 1710320465423,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710320465423,
+      "end": 1710320465423,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710320465423,
+      "end": 1710320465423,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710320465423,
+      "end": 1710320465423,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710320465423,
+      "end": 1710320465423,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710320465423,
+      "end": 1710320465423,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710320465423,
+      "end": 1710320465423,
+      "order": "normal"
+    }
+  ]
+}
