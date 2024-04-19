@@ -1,0 +1,58 @@
+{
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ]
+    },
+    "scripts": {
+        "build": "nuxt build",
+        "build-dev": "nuxt build --dotenv .env.dev",
+        "build-live": "nuxt build --dotenv .env",
+        "dev": "nuxt dev --dotenv .env.dev",
+        "live": "nuxt dev --dotenv .env.live",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint": "eslint \"**/*.{ts,tsx,vue,js}\" --fix",
+        "lint-eslint": "eslint --ignore-path .gitignore **/*{ts,tsx,vue,js} --fix",
+        "lint-prettier": "prettier --write \"**/*.(ts|tsx|vue|js|json)\"",
+        "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
+    },
+    "devDependencies": {
+        "@nuxt/devtools": "latest",
+        "@nuxtjs/eslint-config-typescript": "^12.0.0",
+        "@types/node": "^18",
+        "@typescript-eslint/eslint-plugin": "^5.30.7",
+        "@typescript-eslint/parser": "^5.30.7",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-config-standard-with-typescript": "^35.0.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^15.7.0",
+        "eslint-plugin-nuxt": "^4.0.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-vue": "^9.15.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.2",
+        "nuxt": "^3.5.2",
+        "prettier": "^2.8.8",
+        "sass": "^1.63.4",
+        "sass-loader": "^13.3.2",
+        "typescript": "^5.1.3",
+        "vite-plugin-eslint": "^1.8.1"
+    },
+    "dependencies": {
+        "@pinia/nuxt": "^0.4.11",
+        "nuxt-swiper": "^1.2.2",
+        "pinia": "^2.1.6"
+    },
+    "packageManager": "yarn@3.6.1",
+    "overrides": {
+        "string-width": "4.2.3"
+    }
+}
