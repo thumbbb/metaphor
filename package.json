@@ -20,7 +20,8 @@
         "lint": "eslint \"**/*.{ts,tsx,vue,js}\" --fix",
         "lint-eslint": "eslint --ignore-path .gitignore **/*{ts,tsx,vue,js} --fix",
         "lint-prettier": "prettier --write \"**/*.(ts|tsx|vue|js|json)\"",
-        "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
+        "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public",
+        "vercel": "vercel dev"
     },
     "devDependencies": {
         "@nuxt/devtools": "latest",
